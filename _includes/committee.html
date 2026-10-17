@@ -1,0 +1,30 @@
+<div class="page-section container px-3 pt-5 pb-5 mt-2 d-flex flex-column gap-4">
+  <div class="row text-center">
+    <div class="col-12">
+      <h2 class="section-title fs-2 mb-2">Organizing Committee</h2>
+    </div>
+  </div>
+  <div class="container">
+    {% for g in site.data.committee %}
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center fw-bold text-muted {% if forloop.first %}mt-4{% else %}mt-5{% endif %} mb-4">{{ g.group }}</h3>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-center g-4">
+          {% for m in g.members %}
+          <div class="col-md-4 col-sm-6 text-center">
+            {% assign photo = m.photo | default: 'placeholder_avatar.svg' %}
+            <img src="{{ '/assets/images_26/people/' | append: photo | relative_url }}"
+              alt="{{ m.name }}" class="circle-img mb-3" />
+            <h5>{{ m.name }}</h5>
+            <h6 class="text-muted"><i>{{ m.affiliation }}</i></h6>
+            <p class="text-primary fw-semibold">{{ m.role | default: g.role }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
