@@ -1,0 +1,155 @@
+---
+layout: default
+title: Contact
+
+---
+
+<style>
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --card-hover-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+  }
+
+  /* Hero Styling */
+  .contact-hero {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.7), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/contact.webp');
+    /* Abstract "Connection" image */
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Contact Cards */
+  .contact-card {
+    border: none;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  /* Icon Styling */
+  .icon-box {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 202, 240, 0.1) 100%);
+    color: #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .contact-card:hover .icon-box {
+    /* background: var(--primary-gradient); */
+    color: white;
+    transform: scale(1.1);
+  }
+
+  /* Link Styling */
+  .contact-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .contact-link:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+  }
+
+  .badge-tbd {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+    padding: 0.25em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+</style>
+
+<section class="jumbotron text-center mb-5 contact-hero">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder">Contact</h1>
+    <p class="lead text-light opacity-75" style="max-width: 600px;">
+      Have a question about IEEE CYB Conf 2027? Find the right contact below for logistics, submissions, registration, and more.
+    </p>
+  </div>
+</section>
+
+<section class="page-section container px-3 pb-5">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-question-circle"></i></div>
+        <h4 class="fw-bold mb-3">General Questions</h4>
+        <p class="text-muted small mb-3">For general inquiries about the event.</p>
+        <div class="mt-auto"><div class="fw-bold text-dark">Prof. Giancarlo Fortino</div><a href="mailto:giancarlo.fortino@unical.it" class="contact-link">giancarlo.fortino@unical.it</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-file-earmark-text"></i></div>
+        <h4 class="fw-bold mb-3">Technical Program</h4>
+        <p class="text-muted small mb-3">Submissions, topics and review process.</p>
+        <div class="mt-auto"><div class="fw-bold text-dark">Giuseppe Franzè, Mengchu Zhou, Yan Wan, Andrea Salfinger, Guanghui Wen</div></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-receipt"></i></div>
+        <h4 class="fw-bold mb-3">Registration</h4>
+        <p class="text-muted small mb-3">Fees, payments, and invoices.</p>
+        <div class="mt-auto"><a href="{{ '/registration' | relative_url }}" class="btn btn-outline-primary rounded-pill btn-sm px-4">Visit Registration Page</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+        <h4 class="fw-bold mb-3">Local Arrangements</h4>
+        <p class="text-muted small mb-3">Visas, accommodation, and travel assistance.</p>
+        <div class="mt-auto"><div class="fw-bold text-dark">Francesco Tedesco, Fabrizio Mangione</div></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-journal-text"></i></div>
+        <h4 class="fw-bold mb-3">Publication</h4>
+        <p class="text-muted small mb-3">Questions about proceedings and papers.</p>
+        <div class="mt-auto"><div class="fw-bold text-dark">Vincenzo Barbuto</div><a href="mailto:vincenzo.barbuto@unical.it" class="contact-link">vincenzo.barbuto@unical.it</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="contact-card">
+        <div class="icon-box"><i class="bi bi-globe"></i></div>
+        <h4 class="fw-bold mb-3">Website Support</h4>
+        <p class="text-muted small mb-3">Issues or questions regarding the website.</p>
+        <div class="mt-auto"><div class="fw-bold text-dark">Pasquale Rubino</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

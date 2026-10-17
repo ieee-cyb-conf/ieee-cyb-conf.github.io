@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-xl navbar-glass px-sm-3 px-2 fixed-top d-flex flex-column p-0"
+  style="padding: 0 !important;">
+  
+  <div class="container-fluid navbar-content px-sm-3 px-2 py-2 w-100">
+    <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="{{ '/' | relative_url }}"><img
+        src="{{ '/assets/images/ieee mb white png.png' | relative_url }}" height="22px" />
+      <p class="m-0 mt-1 fw-semibold text-white">CYB Conf 2027</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        {% for item in site.data.navigation.main %}
+        <li class="nav-item dropdown align-content-center">
+          <a class="nav-link {% if item.dropdown %}dropdown-toggle{% endif %} text-white {{ item.link_class }}"
+            href="{% if item.url %}{{ item.url | relative_url }}{% else %}#{% endif %}" {% if item.dropdown
+            %}role="button" data-bs-toggle="dropdown" aria-expanded="false" {% endif %}>
+            {{ item.title }}
+          </a>
+          {% if item.dropdown %}
+          <ul class="dropdown-menu {{ item.menu_class }}">
+            {% for subitem in item.items %}
+            {% if subitem.divider %}
+            <li class="{{ subitem.class }}">
+              {% for deepitem in subitem.items %}
+              <a class="dropdown-item" href="{{ deepitem.url | relative_url }}">{{ deepitem.title }}</a>
+              {% endfor %}
+            </li>
+            {% elsif subitem.header %}
+            <li>
+              <h6 class="dropdown-header fw-bold text-uppercase"
+                style="color: rgba(255, 255, 255, 0.6); font-size: 0.75rem; letter-spacing: 1px; {% unless forloop.first %}margin-top: 0.5rem;{% endunless %}">
+                {{ subitem.title }}</h6>
+            </li>
+            {% elsif subitem.text_only %}
+            <li><span class="dropdown-item">{{ subitem.title }}</span></li>
+            {% else %}
+            <li>
+              <a class="dropdown-item" href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -83,3 +83,10 @@ android-sdk/
 
 # overlay black-box crash/user-report dumps — session data, never history
 **/.emergent/recordings/
+
+# Jekyll site build output
+cybconf/_site/
+cybconf/.jekyll-cache/
+cybconf/vendor/
+cybconf-site.zip
+ieee.zip

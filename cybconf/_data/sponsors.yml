@@ -1,0 +1,21 @@
+technical:
+  - image: /assets/images/ieee mb black png.png
+    url: https://www.ieee.org/
+    name: IEEE
+  - image: /assets/images_26/sponsor/smc.webp
+    url: https://r8.ieee.org/italy-smc/
+    name: IEEE Italy SMC Chapter
+  - image: /assets/images_26/sponsor/IEEE_Italy_logo_small.webp
+    url: https://italy.ieeer8.org/
+    name: IEEE Italy Section
+  - image: /assets/images_26/sponsor/STB_universita_della_calabria_logo.webp
+    url: https://edu.ieee.org/it-uc/
+    name: IEEE Student Branch University of Calabria
+  - image: /assets/images_26/sponsor/unical-2.webp
+    url: https://www.unical.it/
+    name: Università della Calabria
+  - image: /assets/images_26/sponsor/dimes.svg
+    url: https://dimes.unical.it/
+    name: DIMES - Università della Calabria
+
+industrial: []

@@ -1,0 +1,97 @@
+- group: Honorary Chair
+  role: Honorary Chair
+  members:
+    - name: Saeid Nahavandi
+      affiliation: Swinburne University, Australia
+- group: General Chairs
+  role: General Chair
+  members:
+    - name: Giancarlo Fortino
+      affiliation: University of Calabria, Italy
+      photo: giancarlo_fortino.webp
+      role: Executive General Chair
+    - name: Peng Shi
+      affiliation: Adelaide University, Australia
+    - name: Mariagrazia Dotoli
+      affiliation: Politecnico di Bari, Italy
+- group: Technical Program Chairs
+  role: Technical Program Chair
+  members:
+    - name: Giuseppe Franzè
+      affiliation: University of Calabria, Italy
+    - name: Mengchu Zhou
+      affiliation: New Jersey Institute of Technology, USA
+      photo: zhou.webp
+    - name: Yan Wan
+      affiliation: University of Texas at Arlington, USA
+    - name: Andrea Salfinger
+      affiliation: University of Udine, Italy
+    - name: Guanghui Wen
+      affiliation: Southeast University, China
+- group: Workshop & Special Sessions
+  role: Workshop/Special Sessions Chair
+  members:
+    - name: Levente Kovács
+      affiliation: Óbuda University, Hungary
+    - name: Soheil Sabri
+      affiliation: University of Central Florida, USA
+    - name: Hong Chen
+      affiliation: Tongji University, China
+    - name: Hui Yu
+      affiliation: University of Glasgow, UK
+- group: Publicity
+  role: Publicity Chair
+  members:
+    - name: Plamen Angelov
+      affiliation: Lancaster University, UK
+    - name: Hong Yan
+      affiliation: City University of Hong Kong, Hong Kong
+    - name: Daoyi Dong
+      affiliation: The Australian National University, Australia
+      photo: daoyi_dong.webp
+    - name: Ying Tang
+      affiliation: Rowan University, USA
+    - name: Chunlin Chen
+      affiliation: Nanjing University, China
+    - name: Enrica Tricomi
+      affiliation: Technical University of Munich, Germany
+    - name: Jinjun Shan
+      affiliation: York University, Canada
+- group: Industry & Sponsorship
+  role: Industry and Sponsorship Chair
+  members:
+    - name: Ming Hou
+      affiliation: Defence Research & Development Canada, Canada
+    - name: Qingsong Wen
+      affiliation: Squirrel AI, USA
+      photo: QingsongWen.webp
+    - name: Thomas Strasser
+      affiliation: AIT Austrian Institute of Technology, Austria
+- group: Finance
+  role: Finance Chair
+  members:
+    - name: Antonio Guerrieri
+      affiliation: ICAR-CNR, Italy
+      photo: antonio_guerrieri.webp
+    - name: Giuseppe D'Aniello
+      affiliation: University of Salerno, Italy
+- group: Publication
+  role: Publication Chair
+  members:
+    - name: Vincenzo Barbuto
+      affiliation: University of Calabria, Italy
+      photo: vincenzo_barbuto.webp
+- group: Web
+  role: Web Chair
+  members:
+    - name: Pasquale Rubino
+      affiliation: University of Calabria, Italy
+      photo: pasquale_rubino.webp
+- group: Local Arrangements
+  role: Local Arrangements Chair
+  members:
+    - name: Francesco Tedesco
+      affiliation: University of Calabria, Italy
+    - name: Fabrizio Mangione
+      affiliation: University of Calabria, Italy
+      photo: fabrizio_mangione.webp

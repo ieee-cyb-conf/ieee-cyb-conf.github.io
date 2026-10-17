@@ -1,0 +1,330 @@
+---
+layout: default
+title: Home
+
+---
+
+<section class="hero-section-wrapper text-center">
+  <div class="container px-2 pt-5 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-3 fw-bolder mt-5">
+      IEEE CYB Conf 2027
+    </h1>
+    <h3 class="w-75 responsive-width fw-medium text-center opacity-75">
+      IEEE International Conference on Cybernetics &mdash; {{ site.data.cyb_data.theme }}
+    </h3>
+    <div class="py-3">
+      <h3>Conference Center, University of Calabria</h3>
+      <h3>Rende (Cosenza), Calabria, Italy</h3>
+      <h3 class="text-info">{{site.data.cyb_data.dates.conferenceDates}}</h3>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold" href="{{ '/call-for-papers/' | relative_url }}">
+        <i class="bi bi-megaphone-fill me-2"></i>Call for Papers
+      </a>
+      <a class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" href="{{ '/discover-calabria/' | relative_url }}">
+        <i class="bi bi-geo-alt-fill me-2"></i>Discover Calabria
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="page-section container pt-5 px-4 pb-5 mt-2 d-flex flex-column gap-3">
+
+  <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #07152f 0%, #064e3b 50%, #047857 100%);">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+      <div class="d-flex align-items-start align-items-sm-center gap-3">
+        <div class="rounded-circle bg-white bg-opacity-20 p-3 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width: 54px; height: 54px;">
+          <i class="bi bi-robot fs-3 text-warning"></i>
+        </div>
+        <div>
+          <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+            <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill">CONFERENCE THEME</span>
+            <span class="badge rounded-pill px-3 py-1 fw-bold" style="background: rgba(255, 255, 255, 0.25); color: #ffffff !important; border: 1px solid rgba(255, 255, 255, 0.4); font-size: 0.85rem;">
+              <i class="bi bi-calendar3 text-warning me-1"></i>Full Paper Submission: {{ site.data.cyb_data.dates.paperSubmission }}
+            </span>
+          </div>
+          <h4 class="fw-bold mb-1 text-white">{{ site.data.cyb_data.theme }}</h4>
+          <p class="mb-0 small" style="color: rgba(255, 255, 255, 0.88);">
+            Perception, motion, cognition, human-robot interaction, applications and ethics of the next generation of humanoid robots &mdash; plus all the regular topics of Cybernetics.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
+        <a href="{{ '/call-for-papers/#theme-topics' | relative_url }}" class="btn btn-outline-light rounded-pill px-3.5 py-2.5 fw-bold text-nowrap">
+          <i class="bi bi-grid-fill me-1"></i>View Topics
+        </a>
+        <a href="{{ '/call-for-papers/#important-dates' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm text-nowrap">
+          Important Dates
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-lg-8 mb-3 mb-sm-0 d-flex flex-column gap-4">
+      <h2 class="section-title fs-2 text-center text-sm-start">
+        Join us at IEEE CYB Conf 2027
+      </h2>
+      <p class="fs-5 text-center text-sm-start text-muted text-align-justify">
+        We are delighted to invite you to the <strong>IEEE International Conference on Cybernetics 2027 (IEEE CYB Conf 2027)</strong>,
+        which will be held at the <strong>Conference Center of the University of Calabria (UNICAL)</strong> in Rende (Cosenza),
+        Calabria, Italy, from <strong>{{site.data.cyb_data.dates.conferenceDates}}</strong>.
+        The conference brings together researchers and practitioners from Academia and Industry, coming from all areas of the world,
+        actively working on the topics of Cybernetics.
+      </p>
+      <p class="fs-5 text-center text-sm-start text-muted text-align-justify">
+        The theme of this edition is <strong>"{{ site.data.cyb_data.theme }}"</strong>. The program will include keynote speeches,
+        workshops, tutorials, special sessions, an industry/research panel, poster and demo sessions, a PhD Forum and a
+        Women in Cybernetics networking meeting &mdash; all set in Calabria, the southern-most tip of Italy and the land of Pythagoras,
+        with over 800 km of coastline, green mountains and a wonderful Mediterranean cuisine.
+      </p>
+      <div class="mt-2 text-muted fst-italic">
+        Sincerely,<br />
+        <span class="fw-bold text-dark">The IEEE CYB Conf 2027 Organizing Committee</span>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-3 mb-sm-0">
+      <div class="card dates-card border-0 shadow-sm">
+        <div class="card-body p-4">
+          <h4 class="fs-5 fw-bold mb-3">Key Dates and Deadlines</h4>
+
+          <div class="text-muted small fw-bold text-uppercase mb-3" style="font-size: 0.72rem; letter-spacing: 0.5px;">
+            2027 Deadlines
+          </div>
+
+          <div class="d-flex flex-column">
+            <div class="date-item primary">
+              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">Full Paper Submission</div>
+              <div class="fw-bold" style="font-size: 0.85rem;">{{site.data.cyb_data.dates.paperSubmission}}</div>
+            </div>
+            <div class="date-item">
+              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">Acceptance Notice</div>
+              <div class="fw-bold" style="font-size: 0.85rem;">{{site.data.cyb_data.dates.authorsNotification}}</div>
+            </div>
+            <div class="date-item">
+              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">Camera-ready Submission</div>
+              <div class="fw-bold" style="font-size: 0.85rem;">{{site.data.cyb_data.dates.cameraReadyDue}}</div>
+            </div>
+            <div class="date-item">
+              <div class="fw-semibold text-dark mb-1" style="font-size: 0.9rem;">Early Bird Registration</div>
+              <div class="fw-bold" style="font-size: 0.85rem;">{{site.data.cyb_data.dates.earlyBird}}</div>
+            </div>
+            <div class="date-item active">
+              <div class="fw-semibold text-success mb-1" style="font-size: 0.9rem;">Conference Dates</div>
+              <div class="text-success fw-bold" style="font-size: 0.85rem;">{{site.data.cyb_data.dates.conferenceDates}}</div>
+            </div>
+          </div>
+          <a href="{{ '/call-for-papers/' | relative_url }}" class="btn btn-primary btn-sm w-100 fw-bold mt-3 py-2" style="border-radius: 8px;">
+            <i class="bi bi-megaphone-fill me-1"></i> Read the Call for Papers
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5 border-top border-bottom">
+  <div class="page-section container px-3 d-flex flex-column gap-4">
+    <div class="row">
+      <div class="col-12 mb-3 mb-sm-0 d-flex flex-column gap-4 text-center">
+
+        <div class="mb-3">
+          <h2 class="section-title fs-2 text-center">Topics Covered</h2>
+          <p class="fs-6 text-muted mx-auto" style="max-width: 640px;">
+            Conference theme: <strong>{{ site.data.cyb_data.theme }}</strong>
+          </p>
+        </div>
+
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-eye"></i><span class="fw-bold fs-5 text-dark">Perception &amp; Sensing</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-arrows-move"></i><span class="fw-bold fs-5 text-dark">Motion &amp; Control</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-cpu"></i><span class="fw-bold fs-5 text-dark">Cognition &amp; AI</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-chat-dots"></i><span class="fw-bold fs-5 text-dark">Human-Robot Interaction</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-building-gear"></i><span class="fw-bold fs-5 text-dark">Applications &amp; Deployment</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-shield-check"></i><span class="fw-bold fs-5 text-dark">Ethics, Safety &amp; Design</span></div></div>
+        </div>
+
+        <div class="mt-4 mb-2">
+          <h3 class="fs-4 fw-bold text-dark mb-1">Regular Topics</h3>
+          <p class="text-muted small mb-0">Core areas of Cybernetics (not limited to)</p>
+        </div>
+
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-person-bounding-box"></i><span class="fw-bold fs-5 text-dark">Human-Machine Integration</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-arrow-repeat"></i><span class="fw-bold fs-5 text-dark">Control &amp; Feedback Systems</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-heart-pulse"></i><span class="fw-bold fs-5 text-dark">Biological &amp; Hybrid Systems</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-people"></i><span class="fw-bold fs-5 text-dark">Social &amp; Organisational Cybernetics</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-bank"></i><span class="fw-bold fs-5 text-dark">Ethics &amp; Governance</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="topic-card topic-card-horizontal h-100 shadow-sm p-3"><i class="bi bi-stars"></i><span class="fw-bold fs-5 text-dark">Emerging Frontiers (Quantum Cybernetics)</span></div></div>
+        </div>
+
+        <div>
+          <a href="{{ '/call-for-papers/' | relative_url }}" class="btn btn-primary rounded-pill px-4 shadow-sm mt-3">See all topics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container bg-white py-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title fs-1">Scientific / Technical Program</h2>
+    <p class="text-muted w-75 mx-auto">A rich program designed for researchers and industry professionals shaping the future of Cybernetics.</p>
+  </div>
+  <div class="row g-4 justify-content-center">
+    {% assign items = "mic|3|Keynote Speakers|Distinguished keynote talks by world-renowned experts.;diagram-3|3|Workshops|Full-day / half-day workshops on focused research areas.;easel|2|Tutorials|Two tutorials on hot topics related to the conference theme.;collection|5|Special Sessions|Special sessions on emerging research directions.;briefcase|1|Industry Panel|A panel on Industry/Research hot issues with industry sponsors.;easel2|&#9733;|Posters &amp; Demos|Poster and demo sessions during coffee breaks." | split: ";" %}
+    {% for it in items %}{% assign p = it | split: "|" %}
+    <div class="col-lg-4 col-md-6">
+      <div class="custom-card h-100 p-4 text-center">
+        <i class="bi bi-{{ p[0] }} text-primary" style="font-size: 2.5rem;"></i>
+        <h2 class="fw-bold text-primary mt-2 mb-0">{{ p[1] }}</h2>
+        <h5 class="fw-bold mt-2">{{ p[2] }}</h5>
+        <p class="small text-secondary mb-0">{{ p[3] }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="text-center mt-5">
+    <a href="{{ '/program/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">Explore the Program</a>
+  </div>
+</section>
+
+<section class="container-fluid py-5"
+  style="background: linear-gradient(135deg, #070d19 0%, #0e1e36 50%, #132744 100%); color: white;">
+  <div class="page-section container px-3">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 text-center text-lg-start">
+        <span class="badge rounded-pill bg-warning text-dark px-3 py-2 fw-bold mb-2">
+          <i class="bi bi-sun-fill me-1"></i> Come and join us in Calabria
+        </span>
+        <h2 class="display-6 fw-bold text-white mb-3">Discover Calabria</h2>
+        <p class="fs-5 text-light opacity-90 mb-3">
+          Tropea, the Pearl of the Tyrrhenian Sea, Pizzo and its Murat's Castle, the Stromboli volcano, Scilla, Reggio Calabria
+          and the green Sila Mountains just 20 minutes from Cosenza. And then the peperoncino, n'duja, the Tropea red onion and great wines.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+          <span class="small text-white-50"><i class="bi bi-geo-alt-fill text-info me-1"></i>Calabria, Italy</span>
+          <span class="small text-white-50"><i class="bi bi-water text-info me-1"></i>800 km of coastline</span>
+          <span class="small text-white-50"><i class="bi bi-cup-hot-fill text-info me-1"></i>Traditional cuisine</span>
+        </div>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center">
+          <a href="{{ '/discover-calabria/' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm">
+            <i class="bi bi-compass-fill me-2"></i>Touristic Info &amp; Cuisine
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="p-2 rounded-4 shadow-lg"
+          style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+          <a href="{{ '/discover-calabria/' | relative_url }}">
+            <img src="{{ '/assets/images_27/ppt/s17_02.webp' | relative_url }}" alt="Tropea, Calabria"
+              class="img-fluid rounded-3 shadow w-100 object-fit-cover" style="max-height: 380px;" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5 border-top border-bottom">
+  {% include committee.html %}
+</section>
+
+<section class="container-fluid py-5 bg-white border-bottom border-top">
+  <div class="container px-3 text-center d-flex flex-column align-items-center gap-3">
+    <div class="icon-box-large bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-2"
+      style="width: 80px; height: 80px;">
+      <i class="bi bi-people-fill text-primary fs-1"></i>
+    </div>
+    <h2 class="section-title fs-2 mb-1">Technical Program Committee</h2>
+    <p class="fs-5 text-muted mx-auto mb-3" style="max-width: 800px;">
+      The TPC will include well-known researchers and experts from Academia and Industry, from all areas of the world,
+      with at least 100 members. It will be mainly based on the TCs of the Cybernetics area of IEEE SMCS and the
+      Editorial Board of IEEE Transactions on Cybernetics.
+    </p>
+    <a href="{{ '/committee/#tpc' | relative_url }}" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-sm">
+      View Committees
+    </a>
+  </div>
+</section>
+
+<section class="container-fluid d-flex flex-column gap-4 bg-light py-5 border-top">
+  <div class="page-section container px-3 py-5 d-flex flex-column gap-4">
+    <h2 class="section-title fs-2 text-center">Conferences Organized in Calabria &amp; Italy</h2>
+    <p class="text-muted text-center mx-auto mb-0" style="max-width: 760px;">
+      Prof. Fortino's team has a long track record of organizing IEEE and international conferences in Calabria and Italy.
+    </p>
+    <div class="row pb-3 g-4">
+      {% assign confs = "2028|IEEE SMC 2028|Rome · Oct. 1-4, 2028 · ~1000 attendees expected|;2026|IEEE SWC 2026|Calabria · Sep. 7-11, 2026 · ~450 attendees expected|https://swc-ieee-2026.github.io/;2023|EWSN 2023|Calabria · 120 attendees|https://events.dimes.unical.it/ewsn2023/;2022|IEEE CyberSciTech 2022|Calabria · 180 attendees|http://cyber-science.org/2022/;2020|IEEE ICHMS 2020|Rome (online) · 175 attendees|http://ichms.dimes.unical.it/index.html;2017|IEEE ICNSC 2017|Calabria · 180 attendees|http://icnsc2017.dimes.unical.it/" | split: ";" %}
+      {% for c in confs %}{% assign p = c | split: "|" %}
+      <div class="col-md-4 mb-3 mb-sm-0">
+        <div class="archive-card">
+          <div class="archive-year h5 text-primary">{{ p[0] }}</div>
+          <h3 class="fw-bold text-dark my-3">{{ p[1] }}</h3>
+          <p class="archive-date text-muted mb-4">{{ p[2] }}</p>
+          {% if p[3] %}<a href="{{ p[3] }}" target="_blank" class="btn btn-outline-primary rounded-pill px-4">View Website</a>{% else %}<span class="btn btn-outline-secondary rounded-pill px-4 disabled">Upcoming</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="text-muted text-center small mb-0">
+      Also: IEEE CSCWD 2015 (Calabria, 150 attendees), IDCS 2019 (Naples), IDCS 2014 (Calabria), IDC 2012 (Calabria).
+    </p>
+  </div>
+</section>
+
+<section class="container-fluid py-5 bg-white">
+  <div class="container px-3">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Venue &amp; Location</h2>
+    </div>
+
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h3 class="fw-bold mb-3">The University of Calabria</h3>
+        <p class="text-secondary fs-5 text-align-justify">
+          IEEE CYB Conf 2027 will take place at the <strong>Conference Center of the University of Calabria (UNICAL)</strong>
+          in Rende (Cosenza), Italy. Established in 1972, UNICAL is a large university with almost 25,000 students and,
+          according to CENSIS, it is ranked <strong>n.1 among the large Italian universities</strong>.
+        </p>
+        <p class="text-secondary fs-5 text-align-justify">
+          The venue is just 50 minutes from Lamezia Terme International Airport and 15 minutes by train from the
+          Tyrrhenian coast and the beautiful town of Paola.
+        </p>
+        <a href="{{ '/venue/unical_congress_center/' | relative_url }}"
+          class="btn btn-primary rounded-pill mt-3 px-4 shadow-sm">
+          Explore the Venue
+        </a>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="rounded-4 overflow-hidden shadow-lg position-relative" style="height: 400px;">
+          <img src="{{ '/assets/images_26/imgs/Unical_Rende.webp' | relative_url }}"
+            class="img-fluid w-100 h-100 object-fit-cover" alt="University of Calabria">
+          <div class="image-credit">
+            Photo by <a href="https://commons.wikimedia.org/wiki/File:Unical_Rende_(CS).jpg" target="_blank">Fernando
+              Santopaolo</a> (CC BY-SA 4.0)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-primary-gradient py-5 shadow-sm">
+  <div class="container text-center py-4">
+    <h2 class="display-5 fw-bold text-white mb-3">Support Innovation at IEEE CYB Conf 2027</h2>
+    <p class="lead text-white opacity-90 mb-4 mx-auto" style="max-width: 700px;">
+      Join us as a sponsor and showcase your organization to world-class researchers and industry leaders in Cybernetics.
+    </p>
+    <a href="{{ '/sponsors#become-a-sponsor' | relative_url }}"
+      class="btn btn-light btn-lg rounded-pill px-5 fw-bold shadow">
+      Become a Sponsor
+    </a>
+  </div>
+</section>
+
+<section class="container-fluid bg-light border-top">
+  {% include sponsors.html sponsors=site.data.sponsors %}
+</section>

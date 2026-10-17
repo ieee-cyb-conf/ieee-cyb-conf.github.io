@@ -1,0 +1,26 @@
+title: IEEE CYB Conf 2027
+email: giancarlo.fortino@unical.it
+description: >- # this means to ignore newlines until "baseurl:"
+  Join us for the 2027 IEEE International Conference on Cybernetics (IEEE CYB Conf 2027) at the University of Calabria, Rende (Cosenza), Calabria, Italy, May 10-13, 2027
+baseurl: ""
+url: "https://cybconf-ieee-2027.github.io/"
+author:
+  name: "IEEE CYB Conf 2027 Organizing Committee"
+  email: giancarlo.fortino@unical.it
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - optimize-images.sh
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed

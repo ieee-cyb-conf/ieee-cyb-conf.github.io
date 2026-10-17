@@ -1,0 +1,105 @@
+/* --- Navbar Glassmorphism --- */
+.navbar-glass {
+    background: rgba(15, 15, 15, 0.65) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.show {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu-glass {
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    margin-top: 0.5rem !important;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Custom Scrollbar for Dropdown Menu */
+.dropdown-menu-glass::-webkit-scrollbar {
+    width: 6px;
+}
+.dropdown-menu-glass::-webkit-scrollbar-track {
+    background: transparent;
+}
+.dropdown-menu-glass::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+.dropdown-menu-glass::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu-glass .dropdown-item {
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+}
+
+.dropdown-menu-glass .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transform: translateX(3px);
+}
+
+/* Toggler */
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+/* --- Footer Glassmorphism --- */
+.footer-glass {
+    background: rgba(15, 15, 15, 0.85) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    color: #f8f9fa;
+}
+
+.footer-glass .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.footer-glass a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-glass a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

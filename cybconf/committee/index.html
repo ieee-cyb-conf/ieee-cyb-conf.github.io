@@ -1,0 +1,35 @@
+---
+layout: default
+title: Committee
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.65), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/unical_walk.webp');
+    background-size: cover; background-position: center; min-height: 50vh !important; color: white;
+    display: flex; align-items: center; justify-content: center;">
+  <div class="container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder mt-5">Committees</h1>
+    <p class="lead text-light opacity-90" style="max-width: 700px;">The people behind IEEE CYB Conf 2027</p>
+  </div>
+</section>
+
+{% include committee.html %}
+
+<section class="container-fluid py-5 bg-light border-top" id="tpc">
+  <div class="container px-3 text-center d-flex flex-column align-items-center gap-3">
+    <h2 class="section-title fs-2 mb-1">Technical Program Committee</h2>
+    <p class="fs-5 text-muted mx-auto" style="max-width: 820px;">
+      The TPC members will be well-known researchers and experts from Academia and Industry, coming from all areas of the world
+      (America, Europe, Africa, Middle-East, Asia, Australia, etc.) and actively working on the topics of the CYB Conf conference.
+    </p>
+    <p class="fs-5 text-muted mx-auto" style="max-width: 820px;">
+      We aim to have <strong>at least 100 members</strong> to effectively and efficiently support the review phase. The TPC will be
+      formed later and will be mainly based on the TCs of the Cybernetics area of <strong>IEEE SMCS</strong> and the Editorial Board of
+      <strong>IEEE Transactions on Cybernetics</strong>.
+    </p>
+    <span class="badge bg-warning text-dark fw-bold px-3 py-2 rounded-pill">To be announced</span>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

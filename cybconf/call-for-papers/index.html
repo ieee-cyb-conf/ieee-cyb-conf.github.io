@@ -1,0 +1,114 @@
+---
+layout: default
+title: Call for Papers
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.6), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/general_cfp.webp');
+    background-size: cover;
+    background-position: center 55%;
+    min-height: 60vh !important;
+    position: relative;
+    color: white;
+  ">
+  <div class="hero-section" style="min-height: 60vh !important">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+      <h1 class="display-5 fw-bolder mt-5">IEEE CYB Conf 2027 &mdash; Call for Papers</h1>
+      <div>
+        <h3>{{ site.data.cyb_data.theme }}</h3>
+        <h3 class="text-info">Rende (Cosenza), Italy &middot; {{site.data.cyb_data.dates.conferenceDates}}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
+  <div class="row g-5">
+    <div class="col-lg-4">
+      <div class="custom-card p-0 overflow-hidden" id="important-dates"
+        style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="px-4 pt-4 pb-2" style="background: #ffffff;">
+          <h4 class="fw-semibold mb-1 d-flex align-items-center"
+            style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+            Important Dates
+          </h4>
+        </div>
+        <div class="p-4 pt-2 d-flex flex-column gap-1">
+          <div class="date-item primary"><span class="fw-bold">Full Paper Submission</span><div class="fw-bold text-muted">{{site.data.cyb_data.dates.paperSubmission}}</div></div>
+          <div class="date-item"><span class="fw-bold">Acceptance Notice</span><div class="fw-bold text-muted">{{site.data.cyb_data.dates.authorsNotification}}</div></div>
+          <div class="date-item"><span class="fw-bold">Camera-ready Submission</span><div class="fw-bold text-muted">{{site.data.cyb_data.dates.cameraReadyDue}}</div></div>
+          <div class="date-item"><span class="fw-bold">Early Bird Registration</span><div class="fw-bold text-muted">{{site.data.cyb_data.dates.earlyBird}}</div></div>
+          <div class="mt-2 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
+            <div class="d-flex flex-column align-items-center text-center">
+              <span class="small text-uppercase fw-bold text-success" style="letter-spacing: 1px;">Conference Dates</span>
+              <span class="fs-5 fw-bold text-success">{{site.data.cyb_data.dates.conferenceDates}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-card p-4 mt-4" id="paper-types"
+        style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h4 class="fw-semibold mb-3" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">Paper Types</h4>
+        <ul class="list-unstyled d-flex flex-column gap-2 mb-3">
+          <li class="d-flex justify-content-between"><span><i class="bi bi-file-earmark-text text-primary me-2"></i>Full Paper</span><strong>6 pages</strong></li>
+          <li class="d-flex justify-content-between"><span><i class="bi bi-file-earmark text-primary me-2"></i>Short Paper</span><strong>4 pages</strong></li>
+          <li class="d-flex justify-content-between"><span><i class="bi bi-easel text-primary me-2"></i>Poster / Demo Paper</span><strong>2 pages</strong></li>
+        </ul>
+        <div class="alert alert-light border mb-0 small">
+          <i class="bi bi-journal-check text-primary me-1"></i> Accepted papers will be published in the conference proceedings and submitted to <strong>IEEE Xplore</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8 d-flex flex-column gap-4">
+      <h2 class="section-title fs-2 text-center text-sm-start">Call for Papers</h2>
+      <p class="fs-5 text-muted text-align-justify">
+        The IEEE International Conference on Cybernetics 2027 invites original contributions from Academia and Industry.
+        The theme of this edition is <strong>"{{ site.data.cyb_data.theme }}"</strong>. Submissions on the regular topics of
+        Cybernetics are also very welcome. Topics include, but are not limited to, the following.
+      </p>
+
+      <div class="track-card shadow-sm overflow-hidden" id="theme-topics">
+        <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+          <i class="bi bi-robot text-primary me-2 fs-4"></i>
+          <h4 class="mb-0 fw-bold text-dark">Theme &amp; Specific Topics: {{ site.data.cyb_data.theme }}</h4>
+        </div>
+        <div class="track-body p-4">
+          <div class="row g-4">
+            {% for g in site.data.cfp_topics.theme %}
+            <div class="col-md-6">
+              <h6 class="fw-bold text-primary mb-2">{{ g.area }}</h6>
+              <ul class="track-list-clean list-unstyled small text-secondary mb-0">
+                {% for t in g.topics %}<li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i>{{ t }}</li>{% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card shadow-sm overflow-hidden" id="regular-topics">
+        <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
+          <i class="bi bi-layers-fill text-primary me-2 fs-4"></i>
+          <h4 class="mb-0 fw-bold text-dark">Regular Topics</h4>
+        </div>
+        <div class="track-body p-4">
+          <div class="row g-4">
+            {% for g in site.data.cfp_topics.regular %}
+            <div class="col-md-6">
+              <h6 class="fw-bold text-primary mb-2">{{ g.area }}</h6>
+              <ul class="track-list-clean list-unstyled small text-secondary mb-0">
+                {% for t in g.topics %}<li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i>{{ t }}</li>{% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

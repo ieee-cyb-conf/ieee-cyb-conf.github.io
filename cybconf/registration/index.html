@@ -1,0 +1,33 @@
+---
+layout: default
+title: Registration
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.65), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/unical_air.webp');
+    background-size: cover; background-position: center; min-height: 50vh !important; color: white;
+    display: flex; align-items: center; justify-content: center;">
+  <div class="container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder mt-5">IEEE CYB Conf 2027 Registration</h1>
+    <p class="lead text-light opacity-90">Join us in Calabria, {{ site.data.cyb_data.dates.conferenceDates }}</p>
+  </div>
+</section>
+
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="custom-card p-5 text-center">
+        <i class="bi bi-hourglass-split text-primary" style="font-size: 3rem;"></i>
+        <h3 class="fw-bold mt-3">Registration will open soon</h3>
+        <p class="text-secondary fs-5 mt-3">
+          Registration fees and the online registration form will be published here.
+          The <strong>Early Bird Registration</strong> deadline is <strong>{{ site.data.cyb_data.dates.earlyBird }}</strong>.
+        </p>
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4 mt-2">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

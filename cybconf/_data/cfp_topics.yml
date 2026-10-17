@@ -1,0 +1,57 @@
+theme:
+  - area: Perception & Sensing
+    topics:
+      - Multimodal sensory integration in humanoid robots (vision, touch, sound, proprioception)
+      - Real-time 3D environment mapping and spatial awareness for bipedal robots
+      - Emotion and facial expression recognition for human-robot social interaction
+  - area: Motion & Control
+    topics:
+      - Dynamic balance and fall recovery in bipedal locomotion
+      - Whole-body motion planning for manipulation in unstructured environments
+      - Energy-efficient actuator design for humanoid joint systems
+      - Imitation learning from human motion capture data
+  - area: Cognition & AI
+    topics:
+      - Large language models integrated into humanoid robot decision-making
+      - Commonsense reasoning and situational awareness in autonomous humanoids
+      - Continual and lifelong learning for robots operating in changing environments
+  - area: Human-Robot Interaction
+    topics:
+      - Natural language dialogue systems for intuitive human-robot communication
+      - Trust calibration and transparency in human-robot collaboration
+      - Affective computing — robots that detect and respond to human emotions
+      - Proxemics and social norms in human-robot co-habitation
+  - area: Applications & Deployment
+    topics:
+      - Humanoid robots in eldercare and assistive living environments
+      - Collaborative humanoid robots in industrial and manufacturing settings
+      - Humanoid robots as educators or tutors in learning environments
+  - area: Ethics, Safety & Design
+    topics:
+      - Ethical frameworks for autonomous decision-making in humanoid systems
+      - Soft robotics and biomimetic body design for safer human interaction
+      - Cybersecurity and adversarial robustness in networked humanoid systems
+
+regular:
+  - area: Human-Machine Integration
+    topics:
+      - Adaptive brain-computer interfaces (BCIs) for real-time bidirectional communication between humans and machines
+      - Closed-loop cybernetic prosthetics with sensory feedback and neural control
+  - area: Control & Feedback Systems
+    topics:
+      - Self-regulating adaptive control systems using AI for dynamic environment response
+      - Cybernetic feedback loops in autonomous systems for predictive error correction
+  - area: Biological & Hybrid Systems
+    topics:
+      - Biocybernetics — modeling and augmenting biological regulatory systems (immune, nervous, endocrine) with computational intelligence
+      - Hybrid biological-artificial neural networks for cognitive augmentation
+  - area: Social & Organisational Cybernetics
+    topics:
+      - Second-order cybernetics in complex social systems — how organizations self-regulate and adapt
+      - Cybernetic models for collective intelligence and swarm decision-making
+  - area: Ethics & Governance
+    topics:
+      - Ethical boundaries of human enhancement through cybernetic augmentation — identity, agency, and consent
+  - area: Emerging Frontiers
+    topics:
+      - Quantum cybernetics — applying quantum computing principles to feedback and control in intelligent systems

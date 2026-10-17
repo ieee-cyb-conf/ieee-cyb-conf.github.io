@@ -1,0 +1,172 @@
+---
+layout: default
+title: Accommodation
+
+---
+
+<style>
+  /* Hero Section */
+  .hero-accommodation {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.75), rgba(13, 18, 29, 0.65)), url('../../assets/images_26/imgs/metaverse_cfp.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 55vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Venue Info Box */
+  .venue-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    border-radius: 4px;
+  }
+
+  /* Cards */
+  .accommodation-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .accommodation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  /* Icons */
+  .icon-square {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .bg-icon-primary {
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+  }
+
+  .bg-icon-success {
+    background: rgba(25, 135, 84, 0.1);
+    color: #198754;
+  }
+
+  .bg-icon-info {
+    background: rgba(13, 202, 240, 0.1);
+    color: #0dcaf0;
+  }
+
+  /* Typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+</style>
+
+<section class="hero-accommodation text-center">
+  <div class="container px-4">
+    <h1 class="display-3 fw-bolder mb-3">Accommodation</h1>
+    <p class="lead fw-normal mx-auto text-balance text-light opacity-75" style="max-width: 700px;">
+      Find the perfect place to stay near the University of Calabria. From the on-campus residence to the many hotels of Rende.
+    </p>
+  </div>
+</section>
+
+<section class="container py-5 mt-4">
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="venue-box p-4 d-flex flex-column flex-md-row align-items-md-center gap-3 shadow-sm">
+        <div class="icon-square bg-icon-primary mb-0"><i class="bi bi-geo-alt-fill fs-3"></i></div>
+        <div>
+          <h5 class="fw-bold mb-1">Conference Venue</h5>
+          <p class="mb-0 text-secondary">University of Calabria Conference Center<br>
+            <small class="text-muted">Via P. Bucci, Rende (CS), Italy</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mb-5">
+    <div class="col-12">
+      <div class="accommodation-card p-4 p-md-5">
+        <div class="d-flex justify-content-between align-items-start">
+          <div class="icon-square bg-icon-success"><i class="bi bi-building fs-3"></i></div>
+          <span class="badge rounded-pill bg-success bg-opacity-10 text-success">On Campus</span>
+        </div>
+        <h3 class="fw-bold mb-3">Socrates Residence &mdash; University of Calabria</h3>
+        <p class="text-secondary mb-4">Located within the university campus, the most convenient and budget-friendly option (only bed, <strong>€35 – €45 per night</strong>).</p>
+        <div><a href="https://www.ialbergo.it/booking/dispoB.aspx?ID=570&lang=gb" target="_blank" class="btn btn-secondary btn-lg">Check Availability</a></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title fs-2 mb-4">Hotels in the University Area</h2>
+  <div class="row g-4 mb-5">
+    <div class="col-md-6 col-lg-3">
+      <div class="accommodation-card p-4">
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary align-self-start mb-3">★★★★</span>
+        <h4 class="fw-bold mb-2">Hotel Majorana</h4>
+        <p class="text-secondary small mb-4">Indicative price per night: <strong>€60 (double) – €120 (suite)</strong></p>
+        <div class="mt-auto d-grid"><a href="https://www.hotelmajorana.com/en/" target="_blank" class="btn btn-outline-primary rounded-pill">Visit Website</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="accommodation-card p-4">
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary align-self-start mb-3">★★★★</span>
+        <h4 class="fw-bold mb-2">Hotel Marconi</h4>
+        <p class="text-secondary small mb-4">Indicative price per night: <strong>€70 (double) – €150 (suite)</strong></p>
+        <div class="mt-auto d-grid"><a href="https://www.marconihotelrende.it/" target="_blank" class="btn btn-outline-primary rounded-pill">Visit Website</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="accommodation-card p-4">
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary align-self-start mb-3">★★★★</span>
+        <h4 class="fw-bold mb-2">Grand Hotel Domus</h4>
+        <p class="text-secondary small mb-4">Indicative price per night: <strong>€65 (double) – €125 (suite)</strong></p>
+        <div class="mt-auto d-grid"><a href="https://www.grandhoteldomus.it/" target="_blank" class="btn btn-outline-primary rounded-pill">Visit Website</a></div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="accommodation-card p-4">
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-primary align-self-start mb-3">★★★★</span>
+        <h4 class="fw-bold mb-2">Hotel BV President</h4>
+        <p class="text-secondary small mb-4">Indicative price per night: <strong>€70 (double) – €150 (suite)</strong></p>
+        <div class="mt-auto d-grid"><a href="https://www.bvpresidenthotel.com/?lang=en" target="_blank" class="btn btn-outline-primary rounded-pill">Visit Website</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="accommodation-card p-4 p-md-5 bg-light border-0">
+        <div class="d-flex flex-column flex-md-row gap-4 align-items-center text-center text-md-start">
+          <div class="icon-square bg-white shadow-sm text-secondary"><i class="bi bi-bus-front fs-4"></i></div>
+          <div>
+            <h4 class="fw-bold mb-2">Getting to the Venue &amp; Other Options</h4>
+            <p class="text-secondary mb-0">
+              All hotels are within walking distance of UNICAL (20-25 minutes). Buses connect the hotel area (which is also the main students' area)
+              with the University every 5-10 minutes. Many other options are available on
+              <a href="https://www.booking.com" target="_blank" class="text-decoration-none fw-bold">Booking.com</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

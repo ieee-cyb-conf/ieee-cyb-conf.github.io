@@ -1,0 +1,48 @@
+---
+layout: default
+title: Scientific Program
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.65), rgba(13, 18, 29, 0.7)), url('../assets/images_27/ppt/s13_02.webp');
+    background-size: cover; background-position: center; min-height: 55vh !important; color: white;
+    display: flex; align-items: center; justify-content: center;">
+  <div class="container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder mt-5">Scientific / Technical Program</h1>
+    <p class="lead text-light opacity-90" style="max-width: 700px;">
+      IEEE CYB Conf 2027 &middot; {{ site.data.cyb_data.dates.conferenceDates }} &middot; University of Calabria Conference Center
+    </p>
+  </div>
+</section>
+
+<section class="container bg-white py-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title fs-2">Program Planning</h2>
+    <p class="text-muted w-75 mx-auto">The detailed program will be published closer to the conference. The planned structure is the following.</p>
+  </div>
+  <div class="row g-4 justify-content-center">
+    {% assign items = "mic|3 Keynote Speakers|Distinguished keynote talks by world-renowned researchers and industry leaders.;diagram-3|3 Workshops|Full-day / half-day workshops on focused research areas.;easel|2 Tutorials|Two tutorials on hot topics related to the conference theme.;collection|5 Special Sessions|Special sessions on emerging research directions in Cybernetics.;briefcase|1 Industry Panel|A panel on Industry/Research hot issues with our industry sponsors.;display|Poster + Demo Sessions|Held during coffee breaks to maximize interaction.;journal-bookmark|Special Issues|In ISI-impacted journals and Scopus-impacted series.;mortarboard|PhD Forum|A dedicated forum for PhD students to present their research.;people|Women in Cybernetics|Lunch meeting space for social and networking activities." | split: ";" %}
+    {% for it in items %}{% assign p = it | split: "|" %}
+    <div class="col-lg-4 col-md-6">
+      <div class="custom-card h-100 p-4 text-center">
+        <i class="bi bi-{{ p[0] }} text-primary" style="font-size: 2.5rem;"></i>
+        <h5 class="fw-bold mt-3">{{ p[1] }}</h5>
+        <p class="small text-secondary mb-0">{{ p[2] }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container-fluid bg-light py-5 border-top">
+  <div class="container text-center">
+    <h2 class="section-title fs-2">Proceedings</h2>
+    <p class="fs-5 text-muted mx-auto" style="max-width: 760px;">
+      Accepted papers (Full: 6 pages, Short: 4 pages, Poster/Demo: 2 pages) will be included in the conference proceedings and submitted to IEEE Xplore.
+    </p>
+    <a href="{{ '/call-for-papers/' | relative_url }}" class="btn btn-primary rounded-pill px-4">Call for Papers</a>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

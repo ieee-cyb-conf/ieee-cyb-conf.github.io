@@ -1,0 +1,70 @@
+main:
+  - title: Call for Papers
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: Call for Papers
+        url: /call-for-papers/
+      - title: Topics
+        header: true
+      - title: "Theme: Towards Smart Humanoid Robotics"
+        url: /call-for-papers/#theme-topics
+      - title: Regular Topics
+        url: /call-for-papers/#regular-topics
+      - title: Submission
+        header: true
+      - title: Important Dates
+        url: /call-for-papers/#important-dates
+      - title: Paper Types & Proceedings
+        url: /call-for-papers/#paper-types
+
+  - title: Program
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: Scientific Program
+        url: /program/
+      - title: Social Event & Dinner
+        url: /social-event/
+
+  - title: Committee
+    dropdown: true
+    menu_class: dropdown-menu-glass
+    items:
+      - title: Organizing Committee
+        url: /committee/
+      - title: Technical Program Committee
+        url: /committee/#tpc
+
+  - title: Attending
+    dropdown: true
+    menu_class: dropdown-menu-glass dropdown-menu-end
+    items:
+      - title: Accommodation
+        url: /travel/accommodation/
+      - title: Getting There
+        url: /travel/getting-there/
+      - title: Registration
+        url: /registration
+      - title: Social Event
+        url: /social-event/
+      - title: Sponsors
+        url: /sponsors
+      - title: Venue
+        url: /venue/unical_congress_center/
+      - title: Visa and Invitation Letter
+        url: /travel/visa-information
+
+  - title: Discover Calabria
+    dropdown: true
+    menu_class: dropdown-menu-glass dropdown-menu-end
+    items:
+      - title: Touristic Info
+        url: /discover-calabria/#tourism
+      - title: Calabrian Cuisine
+        url: /discover-calabria/#cuisine
+      - title: Eating & Wining
+        url: /discover-calabria/#food-gallery
+
+  - title: Info & Contact
+    url: /contact

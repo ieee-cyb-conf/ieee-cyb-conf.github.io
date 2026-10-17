@@ -1,0 +1,64 @@
+---
+layout: default
+title: Social Event & Dinner
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.6), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/Castello_svevo_cosenza.webp');
+    background-size: cover; background-position: center; min-height: 60vh !important; color: white;
+    display: flex; align-items: center; justify-content: center;">
+  <div class="container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+    <span class="badge rounded-pill bg-warning text-dark px-3 py-2 fw-bold">
+      <i class="bi bi-stars me-1"></i>IEEE CYB Conf 2027 Social Event &amp; Dinner
+    </span>
+    <h1 class="display-4 fw-bolder">Social Event &amp; Dinner</h1>
+    <p class="lead text-light opacity-90" style="max-width: 720px;">
+      Discover the open-air MAB museum and enjoy the social dinner at the Norman-Swabian Castle of Cosenza.
+    </p>
+  </div>
+</section>
+
+<section class="page-section container px-3 py-5">
+  <div class="row g-5 align-items-center mb-5">
+    <div class="col-lg-6 d-flex flex-column gap-3">
+      <h2 class="section-title fs-2 text-center text-sm-start">Outdoor Museum MAB</h2>
+      <p class="fs-5 text-secondary text-align-justify">
+        The <strong>Museo all'Aperto Bilotti (MAB)</strong> is an open-air museum along Corso Mazzini, the main street of Cosenza,
+        featuring sculptures by world-famous artists such as Salvador Dalí, Giorgio de Chirico and Mimmo Rotella.
+      </p>
+      <div>
+        <a href="https://it.wikipedia.org/wiki/Museo_all%27aperto_Bilotti" target="_blank" class="btn btn-outline-primary rounded-pill px-4">Learn more about MAB</a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="row g-3">
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_05.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="MAB Cosenza"></div>
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_06.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="MAB Cosenza"></div>
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_07.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="MAB Cosenza"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5 align-items-center">
+    <div class="col-lg-6 order-2 order-lg-1">
+      <div class="row g-3">
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_02.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="Cosenza Castle"></div>
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_03.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="Cosenza Castle"></div>
+        <div class="col-4"><img src="{{ '/assets/images_27/ppt/s16_04.webp' | relative_url }}" class="w-100 rounded-4 shadow-sm object-fit-cover" style="height: 220px;" alt="Cosenza Castle by night"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column gap-3">
+      <h2 class="section-title fs-2 text-center text-sm-start">Social Dinner at Cosenza Castle</h2>
+      <p class="fs-5 text-secondary text-align-justify">
+        The social dinner will take place at the <strong>Norman-Swabian Castle of Cosenza</strong>, dominating the city from the top of
+        Pancrazio hill, a magnificent setting to enjoy Calabrian cuisine and networking with colleagues from all over the world.
+      </p>
+      <div>
+        <a href="http://www.castellocosenza.it/" target="_blank" class="btn btn-primary rounded-pill px-4">Visit Castle Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

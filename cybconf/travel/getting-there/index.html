@@ -1,0 +1,242 @@
+---
+layout: default
+title: Getting There
+
+---
+
+<style>
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --card-hover-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+  }
+
+  /* Hero Styling */
+  .travel-hero {
+    /* Image: Abstract Travel/Map concept */
+    background-image: linear-gradient(rgba(13, 18, 29, 0.7), rgba(13, 18, 29, 0.7)), url('../../assets/images_26/imgs/airport.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Transport Cards */
+  .transport-card {
+    border: none;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .transport-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.2), 0 0 0 1px rgba(13, 110, 253, 0.1);
+  }
+
+  .transport-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-gradient);
+    transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 2;
+  }
+
+  .transport-card:hover::before {
+    width: 6px;
+  }
+
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-badge {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    padding: 0.35em 0.65em;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+</style>
+
+<section class="jumbotron text-center mb-5 travel-hero">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-4 fw-bolder">Getting to Rende</h1>
+    <p class="lead text-light opacity-90" style="max-width: 700px;">
+      The University of Calabria is located in Rende (Cosenza), Italy. It is easily accessible by air, train, and car
+      thanks to its strategic location near the A2 Motorway and Lamezia Terme International Airport.
+    </p>
+  </div>
+</section>
+
+<section class="page-section container px-3 pb-5">
+
+  <div class="row mb-5">
+    <div class="col-12 mb-4">
+      <h2 class="fw-bold border-bottom pb-3">By Plane</h2>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="transport-card">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div class="icon-box">🛬</div>
+          <span class="info-badge">Recommended</span>
+        </div>
+        <h3 class="fw-bold">Lamezia Terme International Airport (SUF)</h3>
+        <p class="text-secondary mt-3">
+          This is the main international hub for the region, located approximately <strong>50 minutes</strong> from the
+          University.
+        </p>
+        <ul class="text-secondary">
+          <li><strong>International flights from:</strong> Dusseldorf, Frankfurt, Stuttgart, Altenrhein, London Stansted, Zurich, Prague, Brussels, Geneva, etc.</li>
+          <li><strong>Domestic flights from:</strong> Rome, Milan, Bologna, Turin, Verona, Bergamo.</li>
+        </ul>
+        <div class="alert alert-primary border-0 small">
+          <i class="bi bi-info-circle-fill me-1"></i> For international travelers the best hub to change flight for Lamezia Terme is usually
+          <strong>Rome Fiumicino</strong> (5 daily flights from Rome to Lamezia Terme) or Milan Linate. <strong>We strongly advise to fly to Rome!</strong>
+        </div>
+
+        <h5 class="fw-bold mt-4 mb-3">Transfer to Rende/University:</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
+          <li>
+            <strong>🚌 Shuttle Bus:</strong> Frequent bus services (e.g., <em>Autolinee Romano</em> or <em>Ferrovie
+              della Calabria</em>) connect the airport directly to the <strong>Cosenza Autostazione</strong> (Bus
+            Station). From there, local buses connect to Unical.
+          </li>
+          <li>
+            <strong>🚆 Train:</strong> Take the shuttle/taxi (5 min) from the airport terminal to <strong>Lamezia Terme
+              Centrale</strong> train station. From there, take a train to <strong>Castiglione Cosentino</strong>
+            (direct line, ~35-50 min).
+          </li>
+          <li>
+            <strong>🚖 Taxi/Transfer:</strong> Available outside arrivals. Approximate cost: €70-€90.
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://sacal.it/en/lamezia/" target="_blank"
+            class="btn btn-outline-primary rounded-pill btn-sm px-3">Airport Website</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0">
+      <div class="transport-card h-100">
+        <div class="icon-box bg-light text-secondary">🛫</div>
+        <h5 class="fw-bold">Alternative Airports</h5>
+        <div class="d-flex flex-column gap-4 mt-4">
+          <div>
+            <h6 class="fw-bold text-dark">Naples (NAP)</h6>
+            <p class="small text-muted mb-0">~3.5 hours by train. Good for intercontinental flights, but requires a long
+              transfer.</p>
+          </div>
+          <div>
+            <h6 class="fw-bold text-dark">Reggio Calabria (REG)</h6>
+            <p class="small text-muted mb-0">~2 hours by train. Smaller airport serving mostly domestic routes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-12 mb-4">
+      <h2 class="fw-bold border-bottom pb-3">By Train</h2>
+    </div>
+    <div class="col-12">
+      <div class="transport-card">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h4 class="fw-bold text-primary mb-3">Destination Station: Castiglione Cosentino</h4>
+            <p class="text-secondary">
+              The station serving the University area is <strong>Castiglione Cosentino</strong>. It is located in
+              Quattromiglia (Rende), about 1.5 km from the main campus entrance.
+            </p>
+            <p class="text-secondary">
+              Many hotels are located within walking distance of this station. The University is connected to this
+              station by local buses.
+            </p>
+          </div>
+          <div class="col-md-6 border-start-md">
+            <h4 class="fw-bold mb-3">High-Speed Connections (Frecce)</h4>
+            <p class="text-secondary">
+              If traveling from Rome, Milan, or Naples on high-speed trains (Frecciarossa/Italo), you usually need to
+              change at <strong>Paola</strong> station.
+            </p>
+            <ul class="text-secondary small">
+              <li><strong>Paola Station:</strong> The main railway hub on the Tyrrhenian coast.</li>
+              <li><strong>Transfer:</strong> From Paola, take a regional train to Castiglione Cosentino (approx. 20
+                mins) through the tunnel.</li>
+            </ul>
+            <a href="https://www.trenitalia.com/en.html" target="_blank"
+              class="btn btn-primary rounded-pill btn-sm mt-2 px-4">Check Train Schedules</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="transport-card h-100">
+        <div class="icon-box">🚗</div>
+        <h3 class="fw-bold">By Car</h3>
+        <p class="text-secondary mt-3">
+          The University is located immediately off the <strong>A2 Autostrada del Mediterraneo</strong> (formerly A3
+          Salerno-Reggio Calabria).
+        </p>
+        <div class="alert alert-light border mt-3">
+          <strong>Exit:</strong> Rende - Cosenza Nord
+        </div>
+        <p class="text-secondary small">
+          After exiting the toll booth, follow signs for <strong>Universita'</strong>. The campus entrance is
+          approximately 2 km from the highway exit. Ample parking is available on campus.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="transport-card h-100">
+        <div class="icon-box">🚌</div>
+        <h3 class="fw-bold">By Bus</h3>
+        <p class="text-secondary mt-3">
+          Rende is well-connected by long-distance bus operators such as <strong>FlixBus</strong> and
+          <strong>Itabus</strong>.
+        </p>
+        <div class="alert alert-light border mt-3">
+          <strong>Main Stop:</strong> Rende (Marconi) or Cosenza Autostazione
+        </div>
+        <p class="text-secondary small">
+          The "Rende (Marconi)" stop is located at the highway exit (Quattromiglia), very close to the Castiglione
+          Cosentino train station and many conference hotels.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}

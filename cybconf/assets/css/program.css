@@ -1,0 +1,801 @@
+/* Conference Program Styling - IEEE SWC 2026 */
+
+:root {
+  --color-magna: #f59e0b;
+  --color-magna-bg: #fef3c7;
+  --color-magna-text: #92400e;
+  --color-magna-border: #fcd34d;
+
+  --color-stampa: #06b6d4;
+  --color-stampa-bg: #cffafe;
+  --color-stampa-text: #155e75;
+  --color-stampa-border: #67e8f9;
+
+  --color-aula-a: #ec4899;
+  --color-aula-a-bg: #fce7f3;
+  --color-aula-a-text: #9d174d;
+  --color-aula-a-border: #f472b6;
+
+  --color-caldora: #10b981;
+  --color-caldora-bg: #d1fae5;
+  --color-caldora-text: #065f46;
+  --color-caldora-border: #6ee7b7;
+
+  --color-general: #6366f1;
+  --color-general-bg: #e0e7ff;
+  --color-general-text: #3730a3;
+  --color-general-border: #a5b4fc;
+}
+
+/* Hero Section */
+.program-hero {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.84), rgba(15, 23, 42, 0.94)), url("/assets/images_26/imgs/unical_start.webp");
+  background-size: cover;
+  background-position: center;
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  min-height: 36vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.hero-stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.hero-stat-chip:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-stat-chip strong {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+/* Sticky Controls Bar */
+.program-controls-sticky {
+  position: sticky;
+  top: 56px;
+  z-index: 1020;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+/* View Switcher Pills */
+.nav-pills-program .nav-link {
+  border-radius: 30px;
+  padding: 0.5rem 1.15rem;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-pills-program .nav-link:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.nav-pills-program .nav-link.active {
+  background: #0d6efd;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+/* Search Bar */
+.search-input-group {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid #e2e8f0;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+
+.search-input-group:focus-within {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+.search-input-group .form-control {
+  border: none;
+  font-size: 0.95rem;
+}
+
+.search-input-group .form-control:focus {
+  box-shadow: none;
+}
+
+/* Day Selector Tabs */
+.day-nav-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+  scrollbar-width: thin;
+}
+
+.day-tab-btn {
+  border-radius: 12px;
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #374151;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 125px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.day-tab-btn .day-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+}
+
+.day-tab-btn .day-date {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.day-tab-btn:hover {
+  border-color: #0d6efd;
+  background: #f8faff;
+  color: #0d6efd;
+}
+
+.day-tab-btn.active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+  box-shadow: 0 4px 14px rgba(13, 110, 253, 0.25);
+}
+
+.day-tab-btn.active .day-label,
+.day-tab-btn.active .day-date {
+  color: white;
+}
+
+/* Track / Conference Badges */
+.badge-track-dt {
+  background: #0891b2 !important;
+  color: #ffffff !important;
+}
+
+.badge-track-metaverse {
+  background: #7c3aed !important;
+  color: #ffffff !important;
+}
+
+.badge-track-scalcom {
+  background: #d97706 !important;
+  color: #ffffff !important;
+}
+
+.badge-track-uic {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+.badge-track-atc {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+}
+
+.badge-track-swc {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.badge-track-smartedu {
+  background: #059669 !important;
+  color: #ffffff !important;
+}
+
+.badge-track-smartwomen {
+  background: #db2777 !important;
+  color: #ffffff !important;
+}
+
+.badge-track-workshop {
+  background: #4f46e5 !important;
+  color: #ffffff !important;
+}
+
+/* Filter Pills */
+.filter-pill-btn {
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-pill-btn:hover {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.filter-pill-btn.active {
+  background: #1e293b;
+  color: white;
+  border-color: #1e293b;
+}
+
+/* Time Slot Section Divider Header */
+.timeslot-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.timeslot-badge {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.timeslot-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Room Badges */
+.badge-room-magna {
+  background-color: var(--color-magna-bg) !important;
+  color: var(--color-magna-text) !important;
+  border: 1px solid var(--color-magna-border);
+}
+
+.badge-room-stampa {
+  background-color: var(--color-stampa-bg) !important;
+  color: var(--color-stampa-text) !important;
+  border: 1px solid var(--color-stampa-border);
+}
+
+.badge-room-a {
+  background-color: var(--color-aula-a-bg) !important;
+  color: var(--color-aula-a-text) !important;
+  border: 1px solid var(--color-aula-a-border);
+}
+
+.badge-room-caldora {
+  background-color: var(--color-caldora-bg) !important;
+  color: var(--color-caldora-text) !important;
+  border: 1px solid var(--color-caldora-border);
+}
+
+.badge-room-general {
+  background-color: var(--color-general-bg) !important;
+  color: var(--color-general-text) !important;
+  border: 1px solid var(--color-general-border);
+}
+
+/* Session Cards (Unified Neutral Styling) */
+.session-card {
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.session-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+.session-card-header {
+  padding: 0.9rem 1.15rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Paper Items */
+.paper-item {
+  padding: 0.9rem 1.15rem;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s ease;
+}
+
+.paper-item:last-child {
+  border-bottom: none;
+}
+
+.paper-item:hover {
+  background-color: #f8fafc;
+}
+
+.paper-num-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+
+.paper-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.paper-authors {
+  font-size: 0.88rem;
+  color: #334155;
+}
+
+.paper-affiliations {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Keynote Banner Card */
+.keynote-program-card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border-left: 5px solid var(--color-magna);
+}
+
+.keynote-program-card .keynote-badge {
+  background: #f59e0b;
+  color: #1e293b;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* General & Tutorial Cards */
+.general-event-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid var(--color-general);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.tutorial-program-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #0d6efd;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.tutorial-program-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Search Result Items */
+.search-result-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 1.15rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.search-result-card:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Search highlight */
+mark.search-highlight, .search-highlight {
+  background-color: #fef08a !important;
+  color: #854d0e !important;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* Timetable Matrix Grid (Week at a Glance) */
+.timetable-container {
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.timetable-grid {
+  min-width: 960px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px;
+  padding: 8px;
+}
+
+.timetable-grid th {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.85rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.timetable-grid td {
+  vertical-align: top;
+  padding: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 20%;
+}
+
+.timetable-cell-block {
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.timetable-cell-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  filter: brightness(0.96);
+}
+
+.cell-magna {
+  background: var(--color-magna-bg);
+  color: var(--color-magna-text);
+  border-color: var(--color-magna-border);
+}
+
+.cell-stampa {
+  background: var(--color-stampa-bg);
+  color: var(--color-stampa-text);
+  border-color: var(--color-stampa-border);
+}
+
+.cell-aula-a {
+  background: var(--color-aula-a-bg);
+  color: var(--color-aula-a-text);
+  border-color: var(--color-aula-a-border);
+}
+
+.cell-caldora {
+  background: var(--color-caldora-bg);
+  color: var(--color-caldora-text);
+  border-color: var(--color-caldora-border);
+}
+
+.cell-general {
+  background: var(--color-general-bg);
+  color: var(--color-general-text);
+  border-color: var(--color-general-border);
+}
+
+/* Author Index Styles */
+.author-letter-pill {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #374151;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.author-letter-pill:hover,
+.author-letter-pill.active {
+  background: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.author-card {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 0.85rem 1.15rem;
+  transition: all 0.2s ease;
+}
+
+.author-card:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.08);
+}
+
+.author-paper-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: #eef2ff;
+  color: #4338ca;
+  text-decoration: none;
+  border: 1px solid #c7d2fe;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.author-paper-badge:hover {
+  background: #4338ca;
+  color: white;
+}
+
+/* Floating Action Button (Back to Top) */
+.btn-floating-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(13, 110, 253, 0.35);
+  border: none;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-floating-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-floating-top:hover {
+  transform: translateY(-3px);
+  background: #0b5ed7;
+  color: white;
+}
+
+/* Per-Card Toggle Styling */
+.session-card-header {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.session-card-header:hover {
+  background: #f1f5f9;
+}
+
+.session-toggle-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+.session-toggle-btn:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-color: #0d6efd;
+  transform: scale(1.08);
+}
+
+.session-toggle-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* ================================================================= */
+/* MOBILE & RESPONSIVE REFINEMENTS                                  */
+/* ================================================================= */
+
+/* Scrollable Horizontal Filter Row on Mobile */
+.filters-scroll-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+.filters-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-group-scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.day-nav-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .program-hero {
+    padding-top: 5.5rem;
+    padding-bottom: 2.25rem;
+    min-height: auto;
+  }
+
+  .program-hero h1 {
+    font-size: 1.85rem !important;
+  }
+
+  .program-hero p.lead {
+    font-size: 0.95rem !important;
+  }
+
+  .hero-stat-chip {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .program-controls-sticky {
+    top: 50px;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+  }
+
+  .nav-pills-program .nav-link {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  .day-tab-btn {
+    min-width: 95px;
+    padding: 0.45rem 0.75rem;
+  }
+  .day-tab-btn .day-label {
+    font-size: 0.65rem;
+  }
+  .day-tab-btn .day-date {
+    font-size: 0.85rem;
+  }
+
+  .timeslot-header {
+    margin-top: 1.35rem;
+    margin-bottom: 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .timeslot-badge {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .timeslot-title {
+    font-size: 0.95rem;
+  }
+
+  .timeslot-toggle-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .session-card-header {
+    padding: 0.75rem 0.9rem;
+  }
+
+  .session-card-header strong {
+    font-size: 0.92rem;
+  }
+
+  .paper-item {
+    padding: 0.75rem 0.9rem;
+  }
+
+  .paper-title {
+    font-size: 0.9rem;
+  }
+
+  .paper-authors {
+    font-size: 0.82rem;
+  }
+
+  .paper-affiliations {
+    font-size: 0.74rem;
+  }
+
+  .filter-pill-btn {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .btn-floating-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .program-hero h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .session-card-header {
+    gap: 0.5rem;
+  }
+}

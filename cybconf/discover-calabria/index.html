@@ -1,0 +1,123 @@
+---
+layout: default
+title: Discover Calabria
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.55), rgba(13, 18, 29, 0.65)), url('../assets/images_27/ppt/s17_02.webp');
+    background-size: cover; background-position: center; min-height: 60vh !important; color: white;
+    display: flex; align-items: center; justify-content: center;">
+  <div class="container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-3 fw-bolder mt-5">Discover Calabria</h1>
+    <h3 class="w-75 responsive-width fw-medium text-light opacity-90">
+      The southern-most tip of Italy: over 800 km of coastline, green mountains and the land of Pythagoras
+    </h3>
+  </div>
+</section>
+
+<section class="page-section container px-3 pt-5 mt-2">
+  <div class="row align-items-center g-5">
+    <div class="col-lg-7 d-flex flex-column gap-3">
+      <h2 class="section-title fs-2 text-center text-sm-start">Welcome to Calabria</h2>
+      <p class="fs-5 text-secondary text-align-justify">
+        Calabria is the southern-most tip of Italy, with over 500 miles (800 km) of coastline. Its main cities (provinces) are
+        Cosenza, Catanzaro, Reggio Calabria, Crotone and Vibo Valentia. Cosenza hosts the University of Calabria (UNICAL),
+        the venue of IEEE CYB Conf 2027.
+      </p>
+      <p class="fs-5 text-secondary text-align-justify">
+        Calabria was the land of <strong>Pythagoras</strong>, who founded his mathematical school in the city of Kroton, on the
+        Ionian Sea side, more than 2000 years ago in the <em>Magna Graecia</em> period.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <div class="rounded-4 overflow-hidden shadow-lg bg-white p-2">
+        <img src="{{ '/assets/images_27/ppt/s02_02.webp' | relative_url }}" class="img-fluid w-100 rounded-3" alt="Magna Graecia map" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container px-3 py-5 mb-2" id="tourism">
+  <div class="row text-center justify-content-center mb-5">
+    <div class="col-lg-9">
+      <h2 class="section-title mx-auto">Touristic Info</h2>
+      <p class="fs-5 text-secondary">
+        Very famous touristic and historical towns are close to the conference venue. From the port of Vibo Valentia, it is possible
+        to take a boat to the Aeolian Islands and visit the active Stromboli volcano. See also
+        <a href="http://www.italia.it/en/discover-italy/calabria.html" target="_blank">italia.it</a>.
+      </p>
+    </div>
+  </div>
+  <div class="row g-4 justify-content-center">
+    {% for p in site.data.calabria.places %}
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden">
+        <div style="height: 220px; overflow: hidden;">
+          <img src="{{ '/assets/images_27/ppt/' | append: p.image | relative_url }}" alt="{{ p.name }}" class="w-100 h-100 object-fit-cover" loading="lazy">
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">{{ p.name }}</h5>
+          <p class="text-muted small mb-0 text-align-justify">{{ p.text }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container-fluid bg-light py-5 border-top" id="cuisine">
+  <div class="container px-3">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 d-flex flex-column gap-3">
+        <h2 class="section-title fs-2 text-center text-sm-start">Calabrian Cuisine</h2>
+        <h4 class="fw-medium text-dark">One of Italy's most traditional and noteworthy cuisines!</h4>
+        <p class="fs-5 text-secondary text-align-justify">
+          Witness the famous Calabrian hot pepper (<em>peperoncino</em>), found in most typical Calabrian dishes: from toasted bread with
+          <em>n'duja</em> sausage or sardines &mdash; called the "caviar of the poor" &mdash; to pork sausages, from pasta sauces to fish dishes.
+        </p>
+        <p class="fs-5 text-secondary text-align-justify">
+          The strong flavor of hot pepper contrasts with the sweet taste of the <strong>Tropea red onion</strong>, protected by the PGI quality mark.
+          Other delicacies include extra-virgin olive oil, bergamot liqueurs, liquorice, citron and herbs, honey and jams, and homemade pasta
+          (<em>strangugghj, fileja, maccaruni</em>) still made using the old methods.
+        </p>
+        <p class="fs-5 text-secondary text-align-justify">
+          Finally, a great variety of Calabrian red, white and rosé wines (Cirò, Librandi, Magliocco, Greco di Bianco) can be found and tasted.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-6"><img src="{{ '/assets/images_27/ppt/s18_02.webp' | relative_url }}" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover" style="height: 220px;" alt="Calabrian hot pepper"></div>
+          <div class="col-6"><img src="{{ '/assets/images_27/ppt/s18_03.webp' | relative_url }}" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover" style="height: 220px;" alt="Tropea red onion"></div>
+          <div class="col-12"><img src="{{ '/assets/images_27/ppt/s18_04.webp' | relative_url }}" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover" style="height: 240px;" alt="Calabrian wines"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container px-3 py-5" id="food-gallery">
+  <div class="text-center mb-5">
+    <h2 class="section-title mx-auto">Eating and Wining in Calabria</h2>
+  </div>
+  <div class="row g-4 justify-content-center">
+    {% for f in site.data.calabria.food %}
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden">
+        <div style="height: 180px; overflow: hidden;">
+          <img src="{{ '/assets/images_27/ppt/' | append: f.image | relative_url }}" alt="{{ f.name }}" class="w-100 h-100 object-fit-cover" loading="lazy">
+        </div>
+        <div class="p-3 text-center"><h6 class="fw-bold mb-0">{{ f.name }}</h6></div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container-fluid bg-primary-gradient py-5 shadow-sm">
+  <div class="container text-center py-4">
+    <h2 class="display-5 fw-bold text-white mb-3">Come and join us in Calabria</h2>
+    <p class="lead text-white opacity-90 mb-4">Grazie &amp; Arrivederci in Calabria &mdash; 2027</p>
+    <a href="{{ '/travel/getting-there/' | relative_url }}" class="btn btn-light btn-lg rounded-pill px-5 fw-bold shadow">Getting There</a>
+  </div>
+</section>

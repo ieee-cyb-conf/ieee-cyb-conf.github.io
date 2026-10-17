@@ -1,0 +1,37 @@
+places:
+  - name: Tropea
+    image: s17_02.webp
+    text: Named the "Pearl of the Tyrrhenian Sea", Tropea is one of the most famous touristic and historical towns of Italy, with crystal-clear water and white beaches.
+  - name: Pizzo Calabro
+    image: s17_03.webp
+    text: A charming seaside town where you can visit Murat's Castle and taste the famous Tartufo di Pizzo, the black truffle ice cream.
+  - name: Stromboli
+    image: s17_04.webp
+    text: From the port of Vibo Valentia, take a boat to the Aeolian Islands and visit the active Stromboli Volcano Island.
+  - name: Reggio Calabria
+    image: s17_05.webp
+    text: 1 hour and 20 minutes by train, Reggio Calabria is famous for its touristic promenade, one of the most beautiful in Italy.
+  - name: Scilla
+    image: s17_06.webp
+    text: About 1 hour by car, famous for the legend of Scylla and Charybdis, its white beach and Ruffo's Castle on the rock dominating the seaside.
+  - name: Sila Mountains
+    image: s17_13.webp
+    text: The green Sila Mountains are just 20 minutes from Cosenza, with pristine lakes, ancient pine forests and pure air.
+
+food:
+  - name: N'duja
+    image: s19_06.webp
+  - name: Soppressata (Calabrian Salami)
+    image: s19_10.webp
+  - name: Eggplant Parmigiana
+    image: s19_09.webp
+  - name: Red Onion from Tropea
+    image: s19_02.webp
+  - name: Grilled Fresh Seafood
+    image: s19_05.webp
+  - name: Truffle of Pizzo
+    image: s19_08.webp
+  - name: Selection of Calabrian Wines
+    image: s19_07.webp
+  - name: Stockfish, Potatoes and Hot Chili Pepper
+    image: s19_03.webp

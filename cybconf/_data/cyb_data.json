@@ -1,0 +1,12 @@
+{
+  "dates": {
+    "paperSubmission": "January 15, 2027",
+    "authorsNotification": "March 1, 2027",
+    "cameraReadyDue": "March 31, 2027",
+    "earlyBird": "March 31, 2027",
+    "conferenceDates": "May 10 - 13, 2027"
+  },
+  "theme": "Towards Smart Humanoid Robotics",
+  "venueUrl": "https://www.unical.it/campus/vivere-il-campus/centro-congressi/",
+  "contactEmail": "giancarlo.fortino@unical.it"
+}

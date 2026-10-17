@@ -1,0 +1,554 @@
+---
+layout: default
+title: Venue - University of Calabria
+
+---
+
+<style>
+  /* --- Page Specific Styles --- */
+  :root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    --text-dark: #212529;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-venue {
+    background-image: linear-gradient(rgba(13, 18, 29, 0.7), rgba(13, 18, 29, 0.6)), url('../../assets/images_26/imgs/unical_lib.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* --- Option 1: Image Credit Overlay (For Cards) --- */
+  .image-credit-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 12px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    font-size: 0.7rem;
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    text-align: right;
+    pointer-events: none;
+  }
+
+  .image-credit a {
+    color: #fff;
+    text-decoration: underline;
+    pointer-events: auto;
+  }
+
+  /* Show on hover for custom cards */
+  .custom-card:hover .image-credit,
+  .rounded-4:hover .image-credit,
+  .image-wall-item:hover .image-credit {
+    opacity: 1;
+  }
+
+  /* Hover scale effect for images inside cards */
+  .transition-scale {
+    transition: transform 0.5s ease;
+  }
+
+  .custom-card:hover .transition-scale {
+    transform: scale(1.1);
+  }
+
+  /* Image Wall Gallery - Professional Masonry Layout */
+  .image-wall {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    height: 100%;
+    min-height: 520px;
+    max-height: 650px;
+  }
+
+  .image-wall-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    background: #f8f9fa;
+  }
+
+  .image-wall-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+    z-index: 2;
+  }
+
+  .image-wall-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .image-wall-item:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Large featured image - left column, spans 2 rows */
+  .image-wall-item:nth-child(1) {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+  }
+
+  .image-wall-item:nth-child(1):hover {
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.28);
+  }
+
+  /* Top right image */
+  .image-wall-item:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+    border-radius: 16px;
+  }
+
+  /* Middle right image */
+  .image-wall-item:nth-child(3) {
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 16px;
+  }
+
+  /* Bottom image - spans full width */
+  .image-wall-item:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    border-radius: 16px;
+    min-height: 180px;
+  }
+
+  @media (max-width: 991.98px) {
+    .image-wall {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      min-height: 580px;
+      max-height: none;
+    }
+
+    .image-wall-item:nth-child(1) {
+      grid-row: 1 / 3;
+      grid-column: 1;
+    }
+
+    .image-wall-item:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .image-wall-item:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .image-wall-item:nth-child(4) {
+      grid-column: 1 / -1;
+      grid-row: 3;
+      min-height: 200px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .image-wall {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 1rem;
+      min-height: auto;
+      max-height: none;
+    }
+
+    .image-wall-item {
+      min-height: 280px;
+      border-radius: 14px;
+    }
+
+    .image-wall-item:nth-child(1),
+    .image-wall-item:nth-child(2),
+    .image-wall-item:nth-child(3),
+    .image-wall-item:nth-child(4) {
+      grid-column: 1;
+      grid-row: auto;
+    }
+
+    .image-wall-item:nth-child(1) {
+      min-height: 320px;
+    }
+
+    .image-wall-item:nth-child(4) {
+      min-height: 250px;
+    }
+  }
+</style>
+
+<section class="hero-venue text-center">
+  <div class="container px-3 d-flex flex-column align-items-center gap-3">
+    <h1 class="display-3 fw-bolder">University of Calabria</h1>
+    <h3 class="w-75 responsive-width fw-medium text-light opacity-90">
+      Hosting IEEE CYB Conf 2027 at the Largest Residential Campus in Italy
+    </h3>
+  </div>
+</section>
+
+<section class="page-section container px-3 pt-5 mt-4 d-flex flex-column gap-5">
+  <div class="row align-items-center g-5">
+    <div class="col-lg-7 d-flex flex-column gap-4">
+      <div>
+        <h2 class="section-title fs-2 text-center text-sm-start">The "Beniamino Andreatta" Convention Center</h2>
+        <p class="fs-5 text-secondary text-align-justify">
+          The IEEE CYB Conf 2027 will take place at the prestigious <strong>"Beniamino Andreatta" Convention
+            Center</strong> at the University of Calabria.
+          As the architectural and cultural hub of the campus, this state-of-the-art facility is designed to host
+          international conferences,
+          symposiums, and academic events of all scales.
+        </p>
+        <p class="fs-5 text-secondary text-align-justify">
+          The venue includes the impressive <strong>Aula Magna</strong>, a large auditorium equipped with advanced
+          audio-visual technology, ideal for keynote
+          speeches. It also offers a versatile set of modular meeting rooms for parallel sessions and workshops. The
+          spacious foyers provide an excellent
+          setting for networking, poster sessions, and exhibitions, ensuring a smooth and engaging experience for all
+          attendees.
+        </p>
+      </div>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="https://www.unical.it/campus/vivere-il-campus/centro-congressi/" target="_blank"
+          class="btn btn-primary rounded-pill px-4 py-2">
+          Visit Venue Website
+        </a>
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=17RXFIMpyGYs5LC7TGMFLzcFw52Q&ll=39.35810442499999%2C16.225642549999986&z=21"
+          target="_blank" class="btn btn-outline-primary rounded-pill px-4 py-2">
+          Get Directions
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="card bg-light border-0 rounded-4 p-4 shadow-sm">
+        <h4 class="fw-bold mb-4 text-dark">Venue Highlights</h4>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🏛</div>
+            <div>
+              <h6 class="fw-bold mb-1">Modern Facilities</h6>
+              <p class="small text-muted mb-0">Fully equipped auditorium and modular breakout rooms.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">📶</div>
+            <div>
+              <h6 class="fw-bold mb-1">Smart Connectivity</h6>
+              <p class="small text-muted mb-0">High-speed Eduroam Wi-Fi throughout the venue.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🍽</div>
+            <div>
+              <h6 class="fw-bold mb-1">On-Site Catering</h6>
+              <p class="small text-muted mb-0">Integrated dining areas for coffee breaks and lunches.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <div class="text-primary fs-4">🚶</div>
+            <div>
+              <h6 class="fw-bold mb-1">Walkable Campus</h6>
+              <p class="small text-muted mb-0">Hotels and residences within walking distance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid bg-light mt-5 py-5">
+  <div class="container px-3">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="image-wall">
+          <div class="image-wall-item image-credit-container">
+            <img src="../../assets/images_26/imgs/ponte_sunset.webp" alt="University of Calabria Bridge at Sunset">
+            <div class="image-credit">
+              Photo by <a
+                href="https://unsplash.com/@vbarbuto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vincenzo
+                Barbuto</a> on <a
+                href="https://unsplash.com/photos/XcbV4XDM5bw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+          </div>
+
+          <div class="image-wall-item image-credit-container">
+            <img src="../../assets/images_26/imgs/atc_cfp.webp" alt="University of Calabria Campus View">
+            <div class="image-credit">
+              Photo: University of Calabria Campus
+            </div>
+          </div>
+
+          <div class="image-wall-item image-credit-container">
+            <img src="../../assets/images_26/imgs/uic_cfp.webp" alt="Ponte Pietro Bucci">
+            <div class="image-credit">
+              Photo: Ponte Pietro Bucci
+            </div>
+          </div>
+
+          <div class="image-wall-item image-credit-container">
+            <img src="../../assets/images_26/imgs/metaverse_cfp.webp" alt="University of Calabria Walkway">
+            <div class="image-credit">
+              Photo: University of Calabria Campus
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column gap-4">
+        <div>
+          <h2 class="section-title fs-2 text-center text-sm-start">About University of Calabria</h2>
+          <h4 class="fw-medium text-dark mb-3">A City of Science and Knowledge</h4>
+          <p class="fs-5 text-secondary text-align-justify">
+            Founded in 1972, the <strong>University of Calabria (UNICAL)</strong> stands out as a unique institution
+            within the Italian academic landscape.
+            It is the country’s largest and most significant <strong>residential campus</strong>, inspired by British
+            and American university models and designed
+            to foster a vibrant, immersive learning environment.
+          </p>
+
+          <p class="fs-5 text-secondary text-align-justify">
+            The campus is defined by its iconic architectural landmark: the <strong>"Ponte Pietro Bucci"</strong>, an
+            elevated structure extending for more than
+            1.3 kilometers. This remarkable bridge connects 14 departments as well as libraries, cultural spaces,
+            theaters, and student facilities—creating both
+            a physical and symbolic link across disciplines including Engineering, Sciences, Humanities, and Economics.
+          </p>
+
+          <p class="fs-5 text-secondary text-align-justify">
+            Surrounded by Mediterranean hills and designed as an integrated living-learning ecosystem, UNICAL combines
+            academic excellence with modern
+            infrastructure, offering students and researchers an ideal environment for study, innovation, and
+            collaboration.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-6">
+            <div class="border-start border-primary border-4 ps-3">
+              <h2 class="fw-bold text-primary mb-0">27k+</h2>
+              <p class="text-muted fw-medium">Students</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="border-start border-success border-4 ps-3">
+              <h2 class="fw-bold text-success mb-0">200ha</h2>
+              <p class="text-muted fw-medium">Green Campus Area</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-2">
+          <a href="https://www.unical.it/organizzazione/chi-siamo/storia-missione/" target="_blank"
+            class="btn btn-outline-dark rounded-pill px-4">
+            Discover More About UNICAL
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container px-3 py-5 mb-4">
+  <div class="row text-center justify-content-center mb-5">
+    <div class="col-lg-9">
+      <h2 class="section-title mx-auto">Discover Rende, Cosenza & The Beauty of Calabria</h2>
+      <p class="fs-5 text-secondary">
+        UNICAL is located in the hills of Rende, just a short distance from the historic city of Cosenza.
+        This strategic setting offers a unique blend of Mediterranean climate, cultural heritage, and contemporary
+        innovation.
+        Attendees will find themselves in a region where mountains meet the sea, offering rich opportunities for
+        exploration and discovery.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/Comune_di_Rende.webp" alt="City of Rende"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://commons.wikimedia.org/wiki/File:Comune_di_Rende.jpg" target="_blank">Rende</a> by
+            Fernando Santopaolo (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC
+              BY-SA 4.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">City of Rende</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            Home to UNICAL, Rende offers a fascinating contrast between its modern university area and the ancient
+            medieval village perched on the hill.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/Cosenza_centro_storico.webp" alt="Cosenza Norman Castle"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://commons.wikimedia.org/wiki/File:Cosenza,_centro_storico.jpg" target="_blank">Old
+              town of Cosenza</a> by Giorgio Grano (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+              target="_blank">CC0 1.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Historic Cosenza</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            Just minutes from campus lies the "Athens of Calabria." Explore the historic city center, the open-air MAB
+            art museum, and the majestic Norman-Swabian Castle overlooking the city.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/Lago_Cecita.webp" alt="Sila National Park"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://commons.wikimedia.org/wiki/File:Lago_Cecita,_Parco_Nazionale_della_Sila,_CS.jpg"
+              target="_blank">Cecita Lake</a> by Greco Antonella Francesca (<a
+              href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Sila National Park</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            A short drive away is the "Green Lung of Europe". The Sila plateau offers pristine lakes, ancient pine
+            forests, and pure air, providing a refreshing escape into nature.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/Monte_Pollino.webp" alt="Pollino National Park"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://commons.wikimedia.org/wiki/File:Monte_Pollino.JPG" target="_blank">Mount Pollino</a>
+            by Luca Raimondi (<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA
+              3.0</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Pollino National Park</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            Italy's largest national park and a UNESCO Global Geopark. Famous for the ancient Bosnian Pine (Pino
+            Loricato) and breathtaking mountain landscapes ideal for hiking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/coast.webp" alt="Calabrian Coast"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://unsplash.com/photos/a-view-of-a-beach-with-boats-in-the-water-GN1x0YYY4yU"
+              target="_blank">Calabria Coastline</a> Photo by Fabio Spano</a> (<a
+              href="https://unsplash.com/photos/a-view-of-a-beach-with-boats-in-the-water-GN1x0YYY4yU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Stunning Coastlines</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            Calabria boasts 800km of coastline. From the Tyrrhenian cliffs to the Ionian beaches, attendees can easily
+            reach breathtaking seaside locations like Paola or Diamante.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="custom-card h-100 p-0 border-0 shadow-sm overflow-hidden group-hover-target">
+        <div style="height: 200px; overflow: hidden;" class="image-credit-container">
+          <img src="../../assets/images_26/imgs/arco_magno.webp" alt="Arco Magno San Nicola Arcella"
+            class="w-100 h-100 object-fit-cover transition-scale">
+          <div class="image-credit">
+            Photo: <a href="https://unsplash.com/photos/a-view-of-a-beach-with-a-rock-arch-in-the-water-_Vgf6TxnbXo"
+              target="_blank">Arco Magno</a> by Simone Ruggiero (<a href="https://unsplash.com/license"
+              target="_blank">Unsplash</a>)
+          </div>
+        </div>
+        <div class="p-4">
+          <h5 class="fw-bold mb-3">Arco Magno</h5>
+          <p class="text-muted small mb-0 text-align-justify">
+            Located in San Nicola Arcella, this majestic natural rock arch frames a hidden bay with crystal-clear
+            waters, creating one of the most iconic landscapes in Southern Italy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <a href="https://calabriastraordinaria.it/en" target="_blank"
+        class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold">
+        Discover More About Calabria ↗
+      </a>
+    </div>
+  </div>
+
+</section>
+
+{% include sponsors.html sponsors=site.data.sponsors %}
