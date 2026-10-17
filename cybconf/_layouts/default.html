@@ -59,5 +59,26 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Mobile UX & Smooth Interaction Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var navCollapseEl = document.getElementById('navbarNav');
+        if (!navCollapseEl) return;
+
+        // Auto-close mobile navbar on link click
+        var navLinks = navCollapseEl.querySelectorAll('.dropdown-item, .nav-link:not(.dropdown-toggle)');
+        navLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            if (navCollapseEl.classList.contains('show')) {
+              var bsCollapse = bootstrap.Collapse.getInstance(navCollapseEl);
+              if (bsCollapse) {
+                bsCollapse.hide();
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

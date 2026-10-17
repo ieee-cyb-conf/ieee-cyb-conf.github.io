@@ -76,21 +76,22 @@ h5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images_26/imgs/unical_start.webp');
   background-size: cover;
   background-position: center;
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
+  padding: 4rem 1rem 3rem 1rem;
 }
 
-/* .hero-content {
-  backdrop-filter: blur(4px);
-  padding: 2rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(255,255,255,0.1);
-} */
+@media (max-width: 768px) {
+  .hero-section-wrapper {
+    min-height: min(75vh, 580px);
+    padding: 5.5rem 1rem 2.5rem 1rem;
+  }
+}
 
 /* --- Cards General --- */
 /* Custom Cards */
@@ -99,14 +100,30 @@ h5 {
   border-radius: 1rem;
   background: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.25s ease;
   height: auto;
   overflow: hidden;
 }
 
-.custom-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--card-hover-shadow);
+@media (hover: hover) {
+  .custom-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+  }
+}
+
+.custom-card:active {
+  transform: scale(0.99);
+}
+
+/* Button Touch Optimizations */
+.btn {
+  touch-action: manipulation;
+  transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.96);
 }
 
 /* Timeline Styling for Key Dates */
@@ -680,35 +697,47 @@ h5 {
   }
 }
 
-/* --- Clean Track Cards --- */
+/* --- Clean Track Cards (Theme & Regular Topics) --- */
 .track-card {
   background: #ffffff;
   border: 1px solid #eef2f6;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  height: 100%;
-  transition: all 0.3s ease;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  height: auto;
+  min-height: fit-content;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
+  scroll-margin-top: 95px;
 }
 
-/* Hover Effect: Lift & Accent Border */
-.track-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.1);
-  border-color: #dee2e6;
+/* Hover & Active Effects */
+@media (hover: hover) {
+  .track-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(13, 110, 253, 0.1);
+    border-color: #dee2e6;
+  }
 }
 
 /* Header Section */
 .track-header {
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-  border-bottom: 1px solid #f8f9fa;
-  background: linear-gradient(to right, #ffffff, #fdfdfd);
+  padding: 1.25rem 1.25rem 1rem 1.25rem;
+  border-bottom: 1px solid #f1f3f5;
+  background: linear-gradient(to right, #ffffff, #fafbfe);
   position: relative;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
-/* Blue Accent Line on top/left */
+@media (min-width: 768px) {
+  .track-header {
+    padding: 1.5rem;
+  }
+}
+
+/* Blue Accent Line on left */
 .track-header::before {
   content: '';
   position: absolute;
@@ -721,18 +750,25 @@ h5 {
 }
 
 .track-title {
-  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 3.5vw, 1.35rem);
   font-weight: 700;
-  color: #212529;
+  color: #1a1e21;
   margin: 0;
-  padding-left: 10px;
-  /* Space for accent line */
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* List Container */
 .track-body {
-  padding: 1.5rem;
+  padding: 1.25rem;
   flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .track-body {
+    padding: 1.75rem;
+  }
 }
 
 /* The List Style */
@@ -744,25 +780,26 @@ h5 {
 
 .track-list-clean li {
   position: relative;
-  padding-left: 1rem;
-  margin-bottom: 0.5rem;
-  color: #6c757d;
-  /* Lighter text for less visual weight */
-  font-size: 1rem;
-  /* Slightly smaller for density control */
-  line-height: 1.4;
-  break-inside: avoid;
-  /* Prevents item splitting across columns */
+  padding-left: 0;
+  margin-bottom: 0.65rem;
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
 }
 
-/* Simple Dot Bullet */
+/* No pseudo bullet - HTML icons like bi-check2 are used directly */
 .track-list-clean li::before {
-  content: '•';
-  color: #0d6efd;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: none !important;
+}
+
+.track-list-clean li i {
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
 /* --- High Contrast Sponsor Tiles --- */

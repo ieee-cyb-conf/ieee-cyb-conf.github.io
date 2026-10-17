@@ -73,16 +73,86 @@
 
 /* Toggler */
 .navbar-toggler {
-    border: none;
-    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem 0.65rem;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+    touch-action: manipulation;
+}
+
+.navbar-toggler:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler:active {
+    transform: scale(0.92);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-toggler:focus {
-    box-shadow: none;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.35);
 }
+
+/* --- Mobile Navbar Collapse (Below 1200px) --- */
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        background: rgba(12, 18, 30, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 1rem 0.75rem;
+        margin-top: 0.75rem;
+        max-height: calc(85vh - 70px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-nav {
+        gap: 0.35rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 1rem !important;
+        border-radius: 10px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dropdown-menu-glass {
+        background: rgba(22, 30, 48, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-left: 3px solid #0d6efd;
+        border-radius: 12px;
+        margin: 0.35rem 0.5rem 0.75rem 0.75rem !important;
+        padding: 0.5rem;
+        max-height: none;
+    }
+
+    .dropdown-menu-glass .dropdown-item {
+        font-size: 0.92rem;
+        padding: 0.7rem 1rem;
+        min-height: 42px;
+        display: flex;
+        align-items: center;
+        white-space: normal;
+        border-radius: 8px;
+    }
+}
+
 /* --- Footer Glassmorphism --- */
 .footer-glass {
-    background: rgba(15, 15, 15, 0.85) !important;
+    background: rgba(15, 15, 15, 0.92) !important;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -96,10 +166,28 @@
 .footer-glass a {
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 0.35rem 0;
 }
 
 .footer-glass a:hover {
     color: #fff;
     text-decoration: underline;
+    transform: translateX(2px);
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    padding: 0.4rem 0;
+    display: inline-block;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: translateX(3px);
 }

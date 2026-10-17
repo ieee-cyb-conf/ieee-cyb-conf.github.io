@@ -24,14 +24,30 @@ title: Call for Papers
 </section>
 
 <section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
-  <div class="row g-5">
-    <div class="col-lg-4">
-      <div class="custom-card p-0 overflow-hidden" id="important-dates"
-        style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+  <!-- Mobile-Friendly Quick Jump Pills -->
+  <div class="d-flex flex-wrap gap-2 mb-2 pb-2 border-bottom d-lg-none">
+    <a href="#theme-topics" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-robot me-1"></i>Theme Topics
+    </a>
+    <a href="#regular-topics" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-layers-fill me-1"></i>Regular Topics
+    </a>
+    <a href="#important-dates" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-calendar-event me-1"></i>Dates
+    </a>
+    <a href="#paper-types" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-file-earmark-text me-1"></i>Paper Types
+    </a>
+  </div>
+
+  <div class="row g-4 g-lg-5">
+    <div class="col-lg-4 order-2 order-lg-1">
+      <div class="custom-card p-0" id="important-dates"
+        style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
         <div class="px-4 pt-4 pb-2" style="background: #ffffff;">
           <h4 class="fw-semibold mb-1 d-flex align-items-center"
             style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
-            Important Dates
+            <i class="bi bi-calendar3 text-primary me-2"></i>Important Dates
           </h4>
         </div>
         <div class="p-4 pt-2 d-flex flex-column gap-1">
@@ -49,12 +65,23 @@ title: Call for Papers
       </div>
 
       <div class="custom-card p-4 mt-4" id="paper-types"
-        style="border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-        <h4 class="fw-semibold mb-3" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">Paper Types</h4>
+        style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h4 class="fw-semibold mb-3 d-flex align-items-center" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+          <i class="bi bi-journal-text text-primary me-2"></i>Paper Types
+        </h4>
         <ul class="list-unstyled d-flex flex-column gap-2 mb-3">
-          <li class="d-flex justify-content-between"><span><i class="bi bi-file-earmark-text text-primary me-2"></i>Full Paper</span><strong>6 pages</strong></li>
-          <li class="d-flex justify-content-between"><span><i class="bi bi-file-earmark text-primary me-2"></i>Short Paper</span><strong>4 pages</strong></li>
-          <li class="d-flex justify-content-between"><span><i class="bi bi-easel text-primary me-2"></i>Poster / Demo Paper</span><strong>2 pages</strong></li>
+          <li class="d-flex justify-content-between align-items-center py-1 border-bottom border-light">
+            <span><i class="bi bi-file-earmark-text text-primary me-2"></i>Full Paper</span>
+            <span class="badge bg-primary-subtle text-primary fw-bold">6 pages</span>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-1 border-bottom border-light">
+            <span><i class="bi bi-file-earmark text-primary me-2"></i>Short Paper</span>
+            <span class="badge bg-secondary-subtle text-secondary fw-bold">4 pages</span>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-1">
+            <span><i class="bi bi-easel text-primary me-2"></i>Poster / Demo Paper</span>
+            <span class="badge bg-info-subtle text-dark fw-bold">2 pages</span>
+          </li>
         </ul>
         <div class="alert alert-light border mb-0 small">
           <i class="bi bi-journal-check text-primary me-1"></i> Accepted papers will be published in the conference proceedings and submitted to <strong>IEEE Xplore</strong>.
@@ -62,26 +89,38 @@ title: Call for Papers
       </div>
     </div>
 
-    <div class="col-lg-8 d-flex flex-column gap-4">
-      <h2 class="section-title fs-2 text-center text-sm-start">Call for Papers</h2>
-      <p class="fs-5 text-muted text-align-justify">
-        The IEEE International Conference on Cybernetics 2027 invites original contributions from Academia and Industry.
-        The theme of this edition is <strong>"{{ site.data.cyb_data.theme }}"</strong>. Submissions on the regular topics of
-        Cybernetics are also very welcome. Topics include, but are not limited to, the following.
-      </p>
+    <div class="col-lg-8 order-1 order-lg-2 d-flex flex-column gap-4">
+      <div>
+        <h2 class="section-title fs-2 text-center text-sm-start mb-2">Call for Papers</h2>
+        <p class="fs-5 text-muted text-align-justify">
+          The IEEE International Conference on Cybernetics 2027 invites original contributions from Academia and Industry.
+          The theme of this edition is <strong>"{{ site.data.cyb_data.theme }}"</strong>. Submissions on the regular topics of
+          Cybernetics are also very welcome. Topics include, but are not limited to, the following.
+        </p>
+      </div>
 
       <div class="track-card shadow-sm" id="theme-topics">
-        <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
-          <i class="bi bi-robot text-primary me-2 fs-4"></i>
-          <h4 class="mb-0 fw-bold text-dark">Theme &amp; Specific Topics: {{ site.data.cyb_data.theme }}</h4>
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-robot fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Conference Theme Track</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Theme &amp; Specific Topics: {{ site.data.cyb_data.theme }}</h4>
+          </div>
         </div>
-        <div class="track-body p-4">
+        <div class="track-body p-3 p-sm-4">
           <div class="row g-4">
             {% for g in site.data.cfp_topics.theme %}
             <div class="col-md-6">
-              <h6 class="fw-bold text-primary mb-2">{{ g.area }}</h6>
+              <h6 class="fw-bold text-primary mb-2.5 pb-1 border-bottom border-light">{{ g.area }}</h6>
               <ul class="track-list-clean list-unstyled small text-secondary mb-0">
-                {% for t in g.topics %}<li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i>{{ t }}</li>{% endfor %}
+                {% for t in g.topics %}
+                <li>
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <span>{{ t }}</span>
+                </li>
+                {% endfor %}
               </ul>
             </div>
             {% endfor %}
@@ -89,18 +128,28 @@ title: Call for Papers
         </div>
       </div>
 
-      <div class="track-card shadow-sm overflow-hidden" id="regular-topics">
-        <div class="track-header bg-light border-bottom p-3 d-flex align-items-center">
-          <i class="bi bi-layers-fill text-primary me-2 fs-4"></i>
-          <h4 class="mb-0 fw-bold text-dark">Regular Topics</h4>
+      <div class="track-card shadow-sm" id="regular-topics">
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-layers-fill fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Regular Track</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Regular Topics</h4>
+          </div>
         </div>
-        <div class="track-body p-4">
+        <div class="track-body p-3 p-sm-4">
           <div class="row g-4">
             {% for g in site.data.cfp_topics.regular %}
             <div class="col-md-6">
-              <h6 class="fw-bold text-primary mb-2">{{ g.area }}</h6>
+              <h6 class="fw-bold text-primary mb-2.5 pb-1 border-bottom border-light">{{ g.area }}</h6>
               <ul class="track-list-clean list-unstyled small text-secondary mb-0">
-                {% for t in g.topics %}<li class="mb-1"><i class="bi bi-check2 text-primary me-1"></i>{{ t }}</li>{% endfor %}
+                {% for t in g.topics %}
+                <li>
+                  <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                  <span>{{ t }}</span>
+                </li>
+                {% endfor %}
               </ul>
             </div>
             {% endfor %}

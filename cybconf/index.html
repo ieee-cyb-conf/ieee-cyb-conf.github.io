@@ -28,33 +28,33 @@ title: Home
   </div>
 </section>
 
-<section class="page-section container pt-5 px-4 pb-5 mt-2 d-flex flex-column gap-3">
+<section class="page-section container pt-4 pt-sm-5 px-3 px-sm-4 pb-5 mt-2 d-flex flex-column gap-3">
 
-  <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #07152f 0%, #064e3b 50%, #047857 100%);">
-    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
-      <div class="d-flex align-items-start align-items-sm-center gap-3">
-        <div class="rounded-circle bg-white bg-opacity-20 p-3 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width: 54px; height: 54px;">
+  <div class="card border-0 shadow-sm rounded-4 p-3.5 p-sm-4 mb-4 text-white position-relative overflow-hidden" style="background: linear-gradient(135deg, #07152f 0%, #064e3b 50%, #047857 100%);">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-stretch align-items-lg-center gap-3">
+      <div class="d-flex align-items-start gap-3">
+        <div class="rounded-circle bg-white bg-opacity-20 p-2.5 p-sm-3 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width: 50px; height: 50px;">
           <i class="bi bi-robot fs-3 text-warning"></i>
         </div>
-        <div>
-          <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
-            <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill">CONFERENCE THEME</span>
-            <span class="badge rounded-pill px-3 py-1 fw-bold" style="background: rgba(255, 255, 255, 0.25); color: #ffffff !important; border: 1px solid rgba(255, 255, 255, 0.4); font-size: 0.85rem;">
+        <div class="flex-grow-1">
+          <div class="d-flex align-items-center gap-2 mb-1.5 flex-wrap">
+            <span class="badge bg-warning text-dark fw-bold px-2.5 py-1 rounded-pill" style="font-size: 0.75rem;">CONFERENCE THEME</span>
+            <span class="badge rounded-pill px-2.5 px-sm-3 py-1 fw-bold text-wrap text-start" style="background: rgba(255, 255, 255, 0.25); color: #ffffff !important; border: 1px solid rgba(255, 255, 255, 0.4); font-size: 0.8rem; line-height: 1.35;">
               <i class="bi bi-calendar3 text-warning me-1"></i>Full Paper Submission: {{ site.data.cyb_data.dates.paperSubmission }}
             </span>
           </div>
-          <h4 class="fw-bold mb-1 text-white">{{ site.data.cyb_data.theme }}</h4>
-          <p class="mb-0 small" style="color: rgba(255, 255, 255, 0.88);">
+          <h4 class="fw-bold mb-1.5 text-white" style="font-size: clamp(1.2rem, 3.5vw, 1.5rem); word-break: break-word;">{{ site.data.cyb_data.theme }}</h4>
+          <p class="mb-0 small" style="color: rgba(255, 255, 255, 0.88); line-height: 1.5;">
             Perception, motion, cognition, human-robot interaction, applications and ethics of the next generation of humanoid robots &mdash; plus all the regular topics of Cybernetics.
           </p>
         </div>
       </div>
-      <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
-        <a href="{{ '/call-for-papers/#theme-topics' | relative_url }}" class="btn btn-outline-light rounded-pill px-3.5 py-2.5 fw-bold text-nowrap">
+      <div class="d-flex flex-column flex-sm-row gap-2 align-items-stretch align-items-sm-center flex-shrink-0 mt-2 mt-lg-0">
+        <a href="{{ '/call-for-papers/#theme-topics' | relative_url }}" class="btn btn-outline-light rounded-pill px-3.5 py-2.5 fw-bold text-center">
           <i class="bi bi-grid-fill me-1"></i>View Topics
         </a>
-        <a href="{{ '/call-for-papers/#important-dates' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm text-nowrap">
-          Important Dates
+        <a href="{{ '/call-for-papers/#important-dates' | relative_url }}" class="btn btn-warning rounded-pill px-4 py-2.5 fw-bold text-dark shadow-sm text-center">
+          <i class="bi bi-calendar-event me-1"></i>Important Dates
         </a>
       </div>
     </div>
