@@ -29,7 +29,7 @@
 
 /* Hero Section */
 .program-hero {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.84), rgba(15, 23, 42, 0.94)), url("/assets/images_26/imgs/unical_start.webp");
+  background-image: linear-gradient(rgba(15, 23, 42, 0.84), rgba(15, 23, 42, 0.94)), url("../images_26/imgs/unical_start.webp");
   background-size: cover;
   background-position: center;
   padding-top: 7rem;

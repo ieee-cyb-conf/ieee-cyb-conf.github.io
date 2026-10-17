@@ -601,7 +601,7 @@ h5 {
 
 /* --- Contact Page --- */
 .contact-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/images_26/imgs/contact.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../images_26/imgs/contact.webp');
   background-size: cover;
   background-position: center;
   min-height: 60vh;
