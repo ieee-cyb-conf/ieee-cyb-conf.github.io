@@ -3,6 +3,7 @@
   members:
     - name: Saeid Nahavandi
       affiliation: Swinburne University, Australia
+      photo: saeid_nahavandi.jpg
 - group: General Chairs
   role: General Chair
   members:
@@ -12,61 +13,79 @@
       role: Executive General Chair
     - name: Peng Shi
       affiliation: Adelaide University, Australia
+      photo: peng_shi.jpeg
     - name: Mariagrazia Dotoli
       affiliation: Politecnico di Bari, Italy
+      photo: mariagrazia_dotoli.jpg
 - group: Technical Program Chairs
   role: Technical Program Chair
   members:
     - name: Giuseppe Franzè
       affiliation: University of Calabria, Italy
+      photo: giuseppe_franze.jpg
     - name: Mengchu Zhou
       affiliation: New Jersey Institute of Technology, USA
       photo: zhou.webp
     - name: Yan Wan
       affiliation: University of Texas at Arlington, USA
+      photo: yan_wan.jpeg
     - name: Andrea Salfinger
       affiliation: University of Udine, Italy
+      photo: andrea_salfinger.jpeg
     - name: Guanghui Wen
       affiliation: Southeast University, China
+      photo: guanghui_wen.jpeg
 - group: Workshop & Special Sessions
   role: Workshop/Special Sessions Chair
   members:
     - name: Levente Kovács
       affiliation: Óbuda University, Hungary
+      photo: levente_kovacs.jpeg
     - name: Soheil Sabri
       affiliation: University of Central Florida, USA
+      photo: soheil_sabri.jpg
     - name: Hong Chen
       affiliation: Tongji University, China
+      photo: hong_chen.jpg
     - name: Hui Yu
       affiliation: University of Glasgow, UK
+      photo: hui_yu.jpeg
 - group: Publicity
   role: Publicity Chair
   members:
     - name: Plamen Angelov
       affiliation: Lancaster University, UK
+      photo: plamen_angelov.jpg
     - name: Hong Yan
       affiliation: City University of Hong Kong, Hong Kong
+      photo: hong_yan.jpeg
     - name: Daoyi Dong
       affiliation: The Australian National University, Australia
       photo: daoyi_dong.webp
     - name: Ying Tang
       affiliation: Rowan University, USA
+      photo: ying_tang.jpeg
     - name: Chunlin Chen
       affiliation: Nanjing University, China
+      photo: chunlin_chen.jpeg
     - name: Enrica Tricomi
       affiliation: Technical University of Munich, Germany
+      photo: enrica_tricomi.webp
     - name: Jinjun Shan
       affiliation: York University, Canada
+      photo: jinjun_shan.jpeg
 - group: Industry & Sponsorship
   role: Industry and Sponsorship Chair
   members:
     - name: Ming Hou
       affiliation: Defence Research & Development Canada, Canada
+      photo: ming_hou.jpeg
     - name: Qingsong Wen
       affiliation: Squirrel AI, USA
       photo: QingsongWen.webp
     - name: Thomas Strasser
       affiliation: AIT Austrian Institute of Technology, Austria
+      photo: thomas_strasser.webp
 - group: Finance
   role: Finance Chair
   members:
@@ -75,6 +94,7 @@
       photo: antonio_guerrieri.webp
     - name: Giuseppe D'Aniello
       affiliation: University of Salerno, Italy
+      photo: giuseppe_daniello.jpeg
 - group: Publication
   role: Publication Chair
   members:
@@ -92,6 +112,7 @@
   members:
     - name: Francesco Tedesco
       affiliation: University of Calabria, Italy
+      photo: francesco_tedesco.jpg
     - name: Fabrizio Mangione
       affiliation: University of Calabria, Italy
       photo: fabrizio_mangione.webp

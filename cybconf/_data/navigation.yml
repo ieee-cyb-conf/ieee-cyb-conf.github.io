@@ -5,6 +5,8 @@ main:
     items:
       - title: Call for Papers
         url: /call-for-papers/
+      - title: Call for Special Sessions
+        url: /call-for-special-sessions/
       - title: Topics
         header: true
       - title: "Theme: Towards Smart Humanoid Robotics"

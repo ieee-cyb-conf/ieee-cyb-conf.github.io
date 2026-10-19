@@ -1,0 +1,303 @@
+---
+layout: default
+title: Call for Special Sessions
+
+---
+
+<section class="jumbotron text-center" style="
+    background-image: linear-gradient(rgba(13, 18, 29, 0.6), rgba(13, 18, 29, 0.7)), url('../assets/images_26/imgs/general_cfp.webp');
+    background-size: cover;
+    background-position: center 55%;
+    min-height: 60vh !important;
+    position: relative;
+    color: white;
+  ">
+  <div class="hero-section" style="min-height: 60vh !important">
+    <div class="page-section container px-3 pt-5 d-flex flex-column align-items-center gap-3">
+      <h1 class="display-5 fw-bolder mt-5">IEEE CYB Conf 2027 &mdash; Call for Special Sessions</h1>
+      <div>
+        <h3>{{ site.data.cyb_data.theme }}</h3>
+        <h3 class="text-info">Rende (Cosenza), Italy &middot; {{site.data.cyb_data.dates.conferenceDates}}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
+  <!-- Mobile-Friendly Quick Jump Pills -->
+  <div class="d-flex flex-wrap gap-2 mb-2 pb-2 border-bottom d-lg-none">
+    <a href="#aims-scope" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-stars me-1"></i>Aims &amp; Scope
+    </a>
+    <a href="#proposal-guidelines" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-file-earmark-text me-1"></i>Proposal Content
+    </a>
+    <a href="#submission-procedure" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-send me-1"></i>Submission
+    </a>
+    <a href="#important-dates" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1.5 fw-semibold">
+      <i class="bi bi-calendar-event me-1"></i>Dates
+    </a>
+  </div>
+
+  <div class="row g-4 g-lg-5">
+    <!-- Left Column: Dates, Paper Types, Proposal Submission -->
+    <div class="col-lg-4 order-2 order-lg-1">
+      <div class="custom-card p-0" id="important-dates"
+        style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div class="px-4 pt-4 pb-2" style="background: #ffffff;">
+          <h4 class="fw-semibold mb-1 d-flex align-items-center"
+            style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+            <i class="bi bi-calendar3 text-primary me-2"></i>Important Dates
+          </h4>
+        </div>
+        <div class="p-4 pt-2 d-flex flex-column gap-1">
+          <div class="date-item primary">
+            <span class="fw-bold">Special Session Proposal Deadline</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.specialSessionSubmission }}</div>
+          </div>
+          <div class="date-item">
+            <span class="fw-bold">Acceptance Notice</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.specialSessionNotification }}</div>
+          </div>
+          <div class="date-item">
+            <span class="fw-bold">Full Paper Submission</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.paperSubmission }}</div>
+          </div>
+          <div class="date-item">
+            <span class="fw-bold">Paper Acceptance Notice</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.authorsNotification }}</div>
+          </div>
+          <div class="date-item">
+            <span class="fw-bold">Camera-ready Submission</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.cameraReadyDue }}</div>
+          </div>
+          <div class="date-item">
+            <span class="fw-bold">Early Bird Registration</span>
+            <div class="fw-bold text-muted">{{ site.data.cyb_data.dates.earlyBird }}</div>
+          </div>
+          <div class="mt-2 p-3 rounded-3 border border-success bg-light text-success shadow-sm">
+            <div class="d-flex flex-column align-items-center text-center">
+              <span class="small text-uppercase fw-bold text-success" style="letter-spacing: 1px;">Conference Dates</span>
+              <span class="fs-5 fw-bold text-success">{{ site.data.cyb_data.dates.conferenceDates }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-card p-4 mt-4" id="paper-types"
+        style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h4 class="fw-semibold mb-3 d-flex align-items-center" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+          <i class="bi bi-journal-text text-primary me-2"></i>Paper Types
+        </h4>
+        <ul class="list-unstyled d-flex flex-column gap-2 mb-3">
+          <li class="d-flex justify-content-between align-items-center py-1 border-bottom border-light">
+            <span><i class="bi bi-file-earmark-text text-primary me-2"></i>Full Paper</span>
+            <span class="badge bg-primary-subtle text-primary fw-bold">6 pages</span>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-1 border-bottom border-light">
+            <span><i class="bi bi-file-earmark text-primary me-2"></i>Short Paper</span>
+            <span class="badge bg-secondary-subtle text-secondary fw-bold">4 pages</span>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-1">
+            <span><i class="bi bi-easel text-primary me-2"></i>Poster / Demo Paper</span>
+            <span class="badge bg-info-subtle text-dark fw-bold">2 pages</span>
+          </li>
+        </ul>
+        <div class="alert alert-light border mb-0 small">
+          <i class="bi bi-journal-check text-primary me-1"></i> Accepted Special Session papers will be published in the conference proceedings and submitted to <strong>IEEE Xplore</strong>.
+        </div>
+      </div>
+
+      <div class="custom-card p-4 mt-4"
+        style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <h4 class="fw-semibold mb-3 d-flex align-items-center" style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; color: #6c757d;">
+          <i class="bi bi-envelope-paper text-primary me-2"></i>Submit a Proposal
+        </h4>
+        <p class="small text-muted mb-3">
+          Proposals should be submitted in PDF format via email to the Special Sessions Chairs and Executive General Chair.
+        </p>
+        <a href="mailto:{{ site.data.cyb_data.contactEmail }}?subject=IEEE%20CYB%20Conf%202027%20-%20Special%20Session%20Proposal"
+          class="btn btn-outline-primary btn-sm w-100 fw-bold py-2 rounded-pill">
+          <i class="bi bi-envelope me-1"></i>Email Proposal
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column: Details, Guidelines, Organization, Chairs -->
+    <div class="col-lg-8 order-1 order-lg-2 d-flex flex-column gap-4">
+      <div>
+        <h2 class="section-title fs-2 text-center text-sm-start mb-2">Call for Special Sessions</h2>
+        <p class="fs-5 text-muted text-align-justify">
+          The IEEE International Conference on Cybernetics 2027 (IEEE CYB Conf 2027) invites proposals for <strong>Special Sessions</strong> to be held during the conference in Rende (Cosenza), Italy, May 10&ndash;13, 2027. Special Sessions provide a focused forum on innovative, emerging, and cross-disciplinary topics complementing the regular technical program and exploring frontier areas of Cybernetics and the conference theme <strong>"{{ site.data.cyb_data.theme }}"</strong>.
+        </p>
+      </div>
+
+      <!-- Card 1: Aims & Scope -->
+      <div class="track-card shadow-sm" id="aims-scope">
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-stars fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Special Sessions</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Aims and Scope</h4>
+          </div>
+        </div>
+        <div class="track-body p-3 p-sm-4">
+          <p class="text-secondary mb-3">
+            Special Sessions aim to bring together international researchers, industry practitioners, and domain experts to present and discuss breakthroughs in specific, highly topical domains. Proposals covering novel theoretical models, cutting-edge applications, experimental benchmarks, and multidisciplinary paradigms within the scope of Cybernetics and humanoid robotics are warmly encouraged.
+          </p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border border-light h-100">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-lightbulb me-2"></i>Emerging &amp; Niche Topics</h6>
+                <p class="small text-muted mb-0">Focus on specialized or cutting-edge cybernetics domains that may not be fully represented in the regular tracks.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border border-light h-100">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-people me-2"></i>Community Building</h6>
+                <p class="small text-muted mb-0">Foster vibrant collaborations across academic institutions, research labs, and industrial partners worldwide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Proposal Guidelines -->
+      <div class="track-card shadow-sm" id="proposal-guidelines">
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-file-earmark-text fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Guidelines</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Proposal Content &amp; Format</h4>
+          </div>
+        </div>
+        <div class="track-body p-3 p-sm-4">
+          <p class="text-secondary mb-3">
+            Special Session proposals should be prepared as a concise document (PDF format, 1&ndash;3 pages) and must include the following information:
+          </p>
+          <ul class="track-list-clean list-unstyled text-secondary mb-0 d-flex flex-column gap-2.5">
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+              <div>
+                <strong class="text-dark">Title and Acronym:</strong> Clear, concise title and acronym for the proposed Special Session.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+              <div>
+                <strong class="text-dark">Aims and Scientific Rationale:</strong> A 200&ndash;400 word description outlining the scientific background, importance, timeliness, and relevance to IEEE CYB Conf 2027.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+              <div>
+                <strong class="text-dark">List of Topics:</strong> Specific topics and sub-areas covered by the Special Session.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+              <div>
+                <strong class="text-dark">Organizers' Information:</strong> Names, affiliations, email addresses, and short bios (100&ndash;150 words) highlighting relevant research and organizational experience.
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+              <div>
+                <strong class="text-dark">Tentative List of Papers / Authors:</strong> A preliminary list of prospective authors and working paper titles (at least 4&ndash;6 submissions expected).
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3: Session Organization & Review Process -->
+      <div class="track-card shadow-sm" id="submission-procedure">
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-gear fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Process</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Session Organization &amp; Paper Review</h4>
+          </div>
+        </div>
+        <div class="track-body p-3 p-sm-4">
+          <div class="d-flex flex-column gap-3 text-secondary">
+            <div class="d-flex gap-3 align-items-start">
+              <span class="badge rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px;">1</span>
+              <div>
+                <strong class="text-dark">Proposal Review:</strong> Proposals are evaluated by the Workshop &amp; Special Sessions Chairs and General Chairs based on scientific quality, novelty, and relevance.
+              </div>
+            </div>
+            <div class="d-flex gap-3 align-items-start">
+              <span class="badge rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px;">2</span>
+              <div>
+                <strong class="text-dark">Paper Submission &amp; Peer Review:</strong> Papers submitted to accepted Special Sessions undergo the exact same peer-review process as regular conference papers, adhering to IEEE standards.
+              </div>
+            </div>
+            <div class="d-flex gap-3 align-items-start">
+              <span class="badge rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px;">3</span>
+              <div>
+                <strong class="text-dark">Minimum Paper Requirement:</strong> A Special Session requires a minimum of <strong>4 accepted and registered papers</strong> to be scheduled as an independent oral session. If fewer papers are accepted, they will be incorporated into regular conference sessions.
+              </div>
+            </div>
+            <div class="d-flex gap-3 align-items-start">
+              <span class="badge rounded-circle bg-primary text-white d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px;">4</span>
+              <div>
+                <strong class="text-dark">Session Chairs:</strong> Organizers of accepted sessions will be appointed as Session Chairs during the conference event.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Workshop & Special Sessions Chairs -->
+      <div class="track-card shadow-sm" id="chairs">
+        <div class="track-header border-bottom p-3 p-sm-4 d-flex align-items-start gap-3">
+          <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center flex-shrink-0" style="width: 44px; height: 44px;">
+            <i class="bi bi-people-fill fs-4"></i>
+          </div>
+          <div class="flex-grow-1">
+            <span class="badge bg-info-subtle text-dark border border-info-subtle fw-semibold mb-1 text-uppercase" style="font-size: 0.72rem; letter-spacing: 0.5px;">Organization</span>
+            <h4 class="mb-0 fw-bold text-dark track-title">Workshop &amp; Special Sessions Chairs</h4>
+          </div>
+        </div>
+        <div class="track-body p-3 p-sm-4">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 border rounded-3 bg-white h-100">
+                <div class="fw-bold text-dark">Levente Kov&aacute;cs</div>
+                <div class="small text-muted">&Oacute;buda University, Hungary</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 border rounded-3 bg-white h-100">
+                <div class="fw-bold text-dark">Soheil Sabri</div>
+                <div class="small text-muted">University of Central Florida, USA</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 border rounded-3 bg-white h-100">
+                <div class="fw-bold text-dark">Hong Chen</div>
+                <div class="small text-muted">Tongji University, China</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 border rounded-3 bg-white h-100">
+                <div class="fw-bold text-dark">Hui Yu</div>
+                <div class="small text-muted">University of Glasgow, UK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}{% include sponsors.html sponsors=site.data.sponsors %}{% endcomment %}

@@ -4,7 +4,7 @@ from urllib.parse import urljoin, urlparse
 from html.parser import HTMLParser
 
 BASE = open('/app/frontend/.env').read().split('REACT_APP_BACKEND_URL=')[1].split('\n')[0].rstrip('/')
-PAGES = ['/', '/call-for-papers/', '/program/', '/committee/', '/discover-calabria/', '/social-event/',
+PAGES = ['/', '/call-for-papers/', '/call-for-special-sessions/', '/program/', '/committee/', '/discover-calabria/', '/social-event/',
          '/registration', '/contact', '/sponsors', '/venue/unical_congress_center/',
          '/travel/getting-there/', '/travel/accommodation/', '/travel/visa-information']
 LEFT = re.compile(r'SWC\s*2026|Smart World Congress|SWC-IEEE|smartworld|\bSWC\b', re.I)
