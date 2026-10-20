@@ -21,6 +21,9 @@ title: Home
       <a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm fw-bold" href="{{ '/call-for-papers/' | relative_url }}">
         <i class="bi bi-megaphone-fill me-2"></i>Call for Papers
       </a>
+      <a class="btn btn-warning rounded-pill px-4 py-2 shadow-sm fw-bold text-dark" href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf-fill me-2"></i>CFP Flyer (PDF)
+      </a>
       <a class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" href="{{ '/discover-calabria/' | relative_url }}">
         <i class="bi bi-geo-alt-fill me-2"></i>Discover Calabria
       </a>
@@ -125,6 +128,14 @@ title: Home
           <a href="{{ '/call-for-special-sessions/' | relative_url }}" class="btn btn-outline-primary btn-sm w-100 fw-bold mt-2 py-2" style="border-radius: 8px;">
             <i class="bi bi-stars me-1"></i> Call for Special Sessions
           </a>
+          <div class="d-flex gap-2 mt-2">
+            <a href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning btn-sm w-50 fw-bold py-1.5 text-dark text-nowrap" style="border-radius: 8px; font-size: 0.78rem;">
+              <i class="bi bi-file-earmark-pdf-fill me-1"></i> CFP Flyer
+            </a>
+            <a href="{{ site.data.cyb_data.flyerCfs }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm w-50 fw-semibold py-1.5 text-nowrap" style="border-radius: 8px; font-size: 0.78rem;">
+              <i class="bi bi-file-earmark-pdf-fill text-danger me-1"></i> CFS Flyer
+            </a>
+          </div>
         </div>
       </div>
     </div>

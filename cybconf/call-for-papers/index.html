@@ -19,6 +19,14 @@ title: Call for Papers
         <h3>{{ site.data.cyb_data.theme }}</h3>
         <h3 class="text-info">Rende (Cosenza), Italy &middot; {{site.data.cyb_data.dates.conferenceDates}}</h3>
       </div>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+        <a href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning rounded-pill px-4 py-2 fw-bold text-dark shadow">
+          <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download CFP Flyer (PDF)
+        </a>
+        <a href="{{ '/call-for-special-sessions/' | relative_url }}" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">
+          <i class="bi bi-stars me-1"></i>Special Sessions
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -26,6 +34,9 @@ title: Call for Papers
 <section class="page-section container-fluid px-3 pt-3 pb-5 mt-2 d-flex flex-column gap-2">
   <!-- Mobile-Friendly Quick Jump Pills -->
   <div class="d-flex flex-wrap gap-2 mb-2 pb-2 border-bottom d-lg-none">
+    <a href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-warning rounded-pill px-3 py-1.5 fw-bold text-dark">
+      <i class="bi bi-file-earmark-pdf-fill me-1"></i>Locandina (PDF)
+    </a>
     <a href="#theme-topics" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1.5 fw-semibold">
       <i class="bi bi-robot me-1"></i>Theme Topics
     </a>
@@ -45,6 +56,24 @@ title: Call for Papers
 
   <div class="row g-4 g-lg-5">
     <div class="col-lg-4 order-2 order-lg-1">
+      <div class="custom-card p-4 mb-4"
+        style="border-radius: 14px; border: 1px solid rgba(13, 110, 253, 0.2); box-shadow: 0 4px 12px rgba(13,110,253,0.08); background: linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(13, 202, 240, 0.08) 100%);">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+          <div>
+            <h4 class="fw-bold mb-0 text-dark" style="font-size: 1.05rem;">Official CFP Flyer</h4>
+            <span class="small text-muted">Locandina ufficiale Call for Papers</span>
+          </div>
+        </div>
+        <p class="small text-muted mb-3">
+          Scarica la locandina ufficiale della Call for Papers in formato PDF ad alta risoluzione.
+        </p>
+        <a href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm w-100 rounded-pill fw-bold py-2 shadow-sm">
+          <i class="bi bi-box-arrow-up-right me-1"></i> Download Locandina (PDF)
+        </a>
+      </div>
+
       <div class="custom-card p-0" id="important-dates"
         style="border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
         <div class="px-4 pt-4 pb-2" style="background: #ffffff;">
@@ -108,11 +137,26 @@ title: Call for Papers
     <div class="col-lg-8 order-1 order-lg-2 d-flex flex-column gap-4">
       <div>
         <h2 class="section-title fs-2 text-center text-sm-start mb-2">Call for Papers</h2>
-        <p class="fs-5 text-muted text-align-justify">
-          The IEEE International Conference on Cybernetics 2027 invites original contributions from Academia and Industry.
-          The theme of this edition is <strong>"{{ site.data.cyb_data.theme }}"</strong>. Submissions on the regular topics of
-          Cybernetics are also very welcome. Topics include, but are not limited to, the following.
+        <h4 class="fw-bold text-primary mb-3">Towards Smart Humanoid Robotics</h4>
+        <p class="fs-6 text-muted text-align-justify mb-3">
+          Cybernetics provides the theoretical and methodological foundations for understanding and designing intelligent systems through feedback, communication, and control. Humanoid robotics represents a compelling frontier in this field, bringing together perception, cognition, learning, and adaptive control to enable autonomous, robust, and safe interactions with humans and dynamic environments.
         </p>
+        <p class="fs-6 text-muted text-align-justify mb-3">
+          <strong>IEEE CYB Conf 2027</strong> aims to bring together researchers, engineers, and practitioners to share recent advances, emerging challenges, and future research directions in cybernetics. Under the theme <em>&ldquo;Towards Smart Humanoid Robotics,&rdquo;</em> the conference particularly encourages contributions exploring how cybernetic principles, intelligent computational methods, and emerging technologies can advance the capabilities, autonomy, adaptability, and human-centered integration of humanoid robots.
+        </p>
+        <p class="fs-6 text-muted text-align-justify mb-3">
+          We invite original, unpublished research papers presenting novel theoretical contributions, methodologies, technologies, and applications across the broad spectrum of cybernetics. While special emphasis is placed on smart humanoid robotics, contributions addressing all established and emerging areas of cybernetics are equally welcome.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2 align-items-center mt-3 mb-2">
+          <a href="{{ site.data.cyb_data.flyerCfp }}" target="_blank" rel="noopener noreferrer" class="btn btn-warning rounded-pill fw-bold text-dark px-3.5 py-2 shadow-sm">
+            <i class="bi bi-file-earmark-pdf-fill me-1"></i> Download Official CFP Flyer (PDF)
+          </a>
+          <a href="{{ site.data.cyb_data.flyerCfs }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-pill fw-semibold px-3 py-2">
+            <i class="bi bi-file-earmark-pdf-fill text-danger me-1"></i> Special Sessions Flyer (PDF)
+          </a>
+        </div>
+
         <div class="alert alert-light border border-primary-subtle d-flex align-items-center justify-content-between flex-wrap gap-2 py-2.5 px-3 rounded-3 mt-3">
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-stars fs-4 text-primary"></i>

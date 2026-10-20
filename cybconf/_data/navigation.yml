@@ -19,6 +19,12 @@ main:
         url: /call-for-papers/#important-dates
       - title: Paper Types & Proceedings
         url: /call-for-papers/#paper-types
+      - title: Locandine / Flyers (PDF)
+        header: true
+      - title: "CFP Flyer (PDF)"
+        url: https://drive.google.com/file/d/10yibJp2E8bLX3BV3i4vInROImc790hkf/view?usp=drive_link
+      - title: "Special Sessions Flyer (PDF)"
+        url: https://drive.google.com/file/d/1aoKHsR6Ii42-AYOG1jufQ2yaNXg0ey1e/view?usp=drive_link
 
   - title: Program
     dropdown: true

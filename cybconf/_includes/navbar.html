@@ -38,7 +38,9 @@
             <li><span class="dropdown-item">{{ subitem.title }}</span></li>
             {% else %}
             <li>
-              <a class="dropdown-item" href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
+              <a class="dropdown-item" href="{% if subitem.url contains '://' %}{{ subitem.url }}{% else %}{{ subitem.url | relative_url }}{% endif %}" {% if subitem.url contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {{ subitem.title }}
+              </a>
             </li>
             {% endif %}
             {% endfor %}

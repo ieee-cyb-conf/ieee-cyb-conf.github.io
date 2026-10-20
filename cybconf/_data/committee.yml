@@ -35,8 +35,8 @@
     - name: Guanghui Wen
       affiliation: Southeast University, China
       photo: guanghui_wen.jpeg
-- group: Workshop & Special Sessions
-  role: Workshop/Special Sessions Chair
+- group: Special Sessions
+  role: Special Sessions Chair
   members:
     - name: Levente Kovács
       affiliation: Óbuda University, Hungary
@@ -116,6 +116,3 @@
     - name: Fabrizio Mangione
       affiliation: University of Calabria, Italy
       photo: fabrizio_mangione.webp
-    - name: Antonello Venturino
-      affiliation: University of Calabria, Italy
-      photo: antonello_venturino.jpeg
