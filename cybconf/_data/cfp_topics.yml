@@ -37,7 +37,7 @@ regular:
     topics:
       - Adaptive brain-computer interfaces (BCIs) for real-time bidirectional communication between humans and machines
       - Closed-loop cybernetic prosthetics with sensory feedback and neural control
-  - area: Control & Feedback Systems
+  - area: Control Systems
     topics:
       - Self-regulating adaptive control systems using AI for dynamic environment response
       - Cybernetic feedback loops in autonomous systems for predictive error correction
